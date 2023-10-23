@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:a_demonstration/navbar.dart';
 
 main() => runApp(const MainScreen());
@@ -14,10 +13,6 @@ class MainScreen extends StatelessWidget {
       home: Scaffold(
         drawer: const NavBar(),
         appBar: AppBar(
-          title: const Text("A Demonstration"),
-          centerTitle: true,
-          elevation: 10,
-          systemOverlayStyle: SystemUiOverlayStyle.dark,
           backgroundColor: const Color.fromARGB(255, 0, 100, 0) ,
         ),
         body: const Center(
@@ -34,7 +29,6 @@ class MainScreen extends StatelessWidget {
             ],
           ),
         ),
-
       ),
     );
   }
