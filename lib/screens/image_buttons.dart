@@ -27,7 +27,8 @@ class ImageButtons extends StatelessWidget {
               child: Align(
                 alignment: Alignment.topLeft,
                 child: Text("This example shows how TalkBack behaves with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.",
-                  style: TextStyle(fontSize: 14),),
+                  style: TextStyle(fontSize: 16),
+                ),
               ),
             ),
           ),
