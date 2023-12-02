@@ -18,7 +18,9 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Drawer(
+
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
@@ -40,12 +42,12 @@ class NavBar extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.gif_box),
-            title: const Text("Alternative text"),
+            title: const Text("Alternative Text"),
             onTap: () => onItemPressed(context, index: 1),
           ),
           ListTile(
               leading: const Icon(Icons.radio_button_on),
-              title: const Text("Image buttons"),
+              title: const Text("Image Buttons"),
               onTap: () => onItemPressed(context, index: 2)),
           ListTile(
             leading: const Icon(Icons.notes),
@@ -54,17 +56,17 @@ class NavBar extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.edit),
-            title: const Text("Edit fields"),
+            title: const Text("Edit Fields"),
             onTap: () => onItemPressed(context, index: 4),
           ),
           ListTile(
             leading: const Icon(Icons.keyboard_tab_outlined),
-            title: const Text("Tab order"),
+            title: const Text("Tab Order"),
             onTap: () => onItemPressed(context, index: 5),
           ),
           ListTile(
             leading: const Icon(Icons.contrast),
-            title: const Text("Contrast ratio"),
+            title: const Text("Contrast Ratio"),
             onTap: () => onItemPressed(context, index: 6),
           ),
           const Divider(

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ImageButtons extends StatelessWidget {
-  const ImageButtons({Key? key}) : super(key: key);
+  const ImageButtons({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 0, 100, 0),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: Column(
         children: [
@@ -15,7 +16,7 @@ class ImageButtons extends StatelessWidget {
             child: Semantics (
               header: true,
               child: const Text("Image buttons",
-                textScaleFactor: 2.0,  ),
+                style: TextStyle(fontSize: 22),  ),
             ),
           ),
           const SizedBox(height: 20,),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TabOrder extends StatelessWidget {
-  const TabOrder({Key? key}) : super(key: key);
+  const TabOrder({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,6 +9,8 @@ class TabOrder extends StatelessWidget {
         title: const Text("Tab order"),
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 0, 100, 0),
+        iconTheme: const IconThemeData(color: Colors.white),
+
       ),
 
     );

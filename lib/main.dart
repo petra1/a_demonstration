@@ -1,30 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:a_demonstration/navbar.dart';
+import 'package:flutter/services.dart';
 
-main() => runApp(const MainScreen());
+main() {
+  runApp(const MainScreen());
+}
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         drawer: const NavBar(),
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 0, 100, 0) ,
+          backgroundColor: const Color.fromARGB(255, 0, 100, 0),
+          systemOverlayStyle: SystemUiOverlayStyle.light ,
+          iconTheme: const IconThemeData(color: Colors.white),
+
         ),
         body: const Center(
           child : Column(
             mainAxisAlignment: MainAxisAlignment.center ,
             children: [
               AppImage(),
-                SizedBox(height: 30),
+                SizedBox(height: 40),
                 Text(
                 "A Demonstration",
-                textScaleFactor: 2.0,
-                  style: TextStyle(color: Color.fromARGB(255, 0, 100, 0)),
+                  style: TextStyle(color: Color.fromARGB(255, 0, 100, 0,),
+                  fontSize: 35),
               ),
             ],
           ),

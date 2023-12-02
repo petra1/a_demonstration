@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class EditFields extends StatelessWidget {
-  const EditFields({Key? key}) : super(key: key);
+  const   EditFields({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,8 +9,8 @@ class EditFields extends StatelessWidget {
         title: const Text("Edit Fields"),
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 0, 100, 0),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
-
     );
   }
 }
