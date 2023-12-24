@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ContrastRatio extends StatelessWidget {
   const ContrastRatio({super.key});
@@ -17,8 +18,8 @@ class ContrastRatio extends StatelessWidget {
               child: Semantics(
                 header: true,
                   child:
-                  const Text("Contrast Ratio",
-                  style: TextStyle(fontSize: 22), ),
+                  Text((AppLocalizations.of(context)!.contrastHeader),
+                  style: const TextStyle(fontSize: 22), ),
               ),
             ),
             const SizedBox(

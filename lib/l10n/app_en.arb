@@ -1,0 +1,39 @@
+{
+  "homeHeader": "Home",
+  "@homeHeader": {
+    "description": "Heading Alternative Text"
+  },
+  "alternativeTextHeader": "Alternative Text",
+  "@alternativeTextHeader": {
+    "description": "Heading Alternative Text"
+  },
+  "contactHeader": "Contact & Privacy",
+  "@contactHeader": {
+    "description": "Heading Contact & Privacy"
+  },
+  "editFieldHeader": "Edit Fields",
+  "@editFieldHeader": {
+    "description": "Heading Contrast Ratio"
+  },
+  "contrastHeader": "Contrast Ratio",
+  "@contrastHeader": {
+    "description": "Heading Contrast Ratio"
+  },
+
+  "headingsHeader": "Headings",
+  "@headingsHeader": {
+    "description": "Heading Headings"
+  },"helpHeader": "Help",
+  "@helpHeader": {
+    "description": "Heading Help"
+  },"imageButtonHeader": "Image Button",
+  "@imageButtonHeader": {
+    "description": "Heading Image Button"
+  },
+  "tabOrderHeader": "Tab Order",
+  "@tabOrderHeader": {
+    "description": "Heading Tab Order"
+  }
+}
+
+

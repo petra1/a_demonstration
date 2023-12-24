@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 import 'package:a_demonstration/main.dart';
 import 'package:a_demonstration/screens/alternative_text.dart';
@@ -37,36 +39,36 @@ class NavBar extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.home),
-            title: const Text("Home"),
+            title: Text((AppLocalizations.of(context)!.homeHeader)),
             onTap: () => onItemPressed(context, index: 0),
           ),
           ListTile(
             leading: const Icon(Icons.gif_box),
-            title: const Text("Alternative Text"),
+            title: Text((AppLocalizations.of(context)!.alternativeTextHeader)),
             onTap: () => onItemPressed(context, index: 1),
           ),
           ListTile(
               leading: const Icon(Icons.radio_button_on),
-              title: const Text("Image Buttons"),
+              title: Text((AppLocalizations.of(context)!.imageButtonHeader)),
               onTap: () => onItemPressed(context, index: 2)),
           ListTile(
             leading: const Icon(Icons.notes),
-            title: const Text("Headings"),
+            title: Text((AppLocalizations.of(context)!.headingsHeader)),
               onTap: () => onItemPressed(context, index: 3),
           ),
           ListTile(
             leading: const Icon(Icons.edit),
-            title: const Text("Edit Fields"),
+            title: Text((AppLocalizations.of(context)!.editFieldHeader)),
             onTap: () => onItemPressed(context, index: 4),
           ),
           ListTile(
             leading: const Icon(Icons.keyboard_tab_outlined),
-            title: const Text("Tab Order"),
+            title: Text((AppLocalizations.of(context)!.tabOrderHeader)),
             onTap: () => onItemPressed(context, index: 5),
           ),
           ListTile(
             leading: const Icon(Icons.contrast),
-            title: const Text("Contrast Ratio"),
+            title: Text((AppLocalizations.of(context)!.contrastHeader)),
             onTap: () => onItemPressed(context, index: 6),
           ),
           const Divider(
@@ -74,12 +76,12 @@ class NavBar extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.contact_mail),
-            title: const Text("Contact & Privacy"),
+            title: Text((AppLocalizations.of(context)!.contactHeader)),
             onTap: () => onItemPressed(context, index: 7),
           ),
           ListTile(
             leading: const Icon(Icons.help),
-            title: const Text("Help"),
+            title: Text((AppLocalizations.of(context)!.helpHeader)),
             onTap: () => onItemPressed(context, index: 8),
           ),
         ],

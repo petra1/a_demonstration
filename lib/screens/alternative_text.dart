@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class AlternativeText extends StatelessWidget {
   const AlternativeText({super.key});
@@ -6,7 +8,7 @@ class AlternativeText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Alternative Text"),
+        title: Text((AppLocalizations.of(context)!.alternativeTextHeader)),
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 0, 100, 0),
         iconTheme: const IconThemeData(color: Colors.white),

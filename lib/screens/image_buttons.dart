@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ImageButtons extends StatelessWidget {
   const ImageButtons({super.key});
@@ -13,10 +14,11 @@ class ImageButtons extends StatelessWidget {
         children: [
           const SizedBox(height: 40,),
           Center(
-            child: Semantics (
+            child: Semantics(
               header: true,
-              child: const Text("Image buttons",
-                style: TextStyle(fontSize: 22),  ),
+              child:
+              Text((AppLocalizations.of(context)!.imageButtonHeader),
+                style: const TextStyle(fontSize: 22), ),
             ),
           ),
           const SizedBox(height: 20,),
