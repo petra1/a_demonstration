@@ -13,12 +13,42 @@
   },
   "editFieldHeader": "Edit Fields",
   "@editFieldHeader": {
-    "description": "Heading Contrast Ratio"
+    "description": "Heading Edit Fields"
   },
+
   "contrastHeader": "Contrast Ratio",
   "@contrastHeader": {
     "description": "Heading Contrast Ratio"
   },
+  "contrastDescription": "The contrast ratio is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g. when using mobile devices outdoors in sunshine. Below you will find some examples of good and bad contrast ratios.",
+  "@contrastDescription": {
+    "description": "Contrast Ratio for Contrast Ratio"
+  },
+  "contrastPassed": "Passed with 21.0:1, HEX: #ffffff on #000000",
+  "@contrastPassed": {
+    "description": "Contrast passed"
+  },
+  "contrastJustPassed": "Just passed with 4.5:1, HEX: #00e9ff on #5a4dad",
+  "@contrastJustPassed": {
+    "description": "Contrast just passed"
+  },
+  "contrastFailed": "Failed with 2.3:1, HEX: #ffffff on #a0b0a1.",
+  "@contrastFailed": {
+    "description": "Contrast failed"
+  },
+  "contrastJustFailed": "Just failed with 4.4:1, HEX: #ffffff on #0083a1",
+  "@contrastJustFailed": {
+    "description": "Contrast just failed"
+  },
+  "contrastFailedWith": "Failed with contrast ratio of? HEX #ffffff on #bb86fc",
+  "@contrastFailedWith": {
+    "description": "Heading Contrast Ratio"
+  },
+  "contrastPassedWith": "Passed with contrast ratio of? HEX #ffffff on #006400",
+  "@contrastPassedWith": {
+    "description": "Heading Contrast Ratio"
+  },
+
 
   "headingsHeader": "Headings",
   "@headingsHeader": {

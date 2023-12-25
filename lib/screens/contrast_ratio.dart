@@ -25,12 +25,12 @@ class ContrastRatio extends StatelessWidget {
             const SizedBox(
               height: 40,
             ),
-            const Padding(
-              padding: EdgeInsets.all(8.0),
+             Padding(
+              padding: const EdgeInsets.all(8.0),
               child: Align(
                 alignment: Alignment.centerLeft,
-                  child: Text("The contrast ratio is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g. when using mobile devices outdoors in sunshine. Below you will find some examples of good and bad contrast ratios.",
-                  style: TextStyle(fontSize: 16),),
+                  child: Text((AppLocalizations.of(context)!.contrastDescription),
+                  style: const TextStyle(fontSize: 16),),
               ),
             ),
             const SizedBox(
@@ -43,11 +43,13 @@ class ContrastRatio extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
+                    width: 20,
+                    height: 80 ,
                     color: Colors.black,
-                    child: const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text("Passed with 21.0:1, HEX: #ffffff on #000000",
-                        style: TextStyle(color: Colors.white),
+                    child:  Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child:  Text((AppLocalizations.of(context)!.contrastPassed),
+                        style: const TextStyle(color: Colors.white),
                       ),
                     ),
 
@@ -59,11 +61,13 @@ class ContrastRatio extends StatelessWidget {
                 ),
                 Expanded(
                     child: Container(
+                      width: 20,
+                      height: 80,
                       color: const Color.fromARGB(255, 90,77, 173),
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text("Just passed with 4.5:1, HEX: #00e9ff on #5a4dad",
-                            style: TextStyle(color: Color.fromARGB(255, 0, 233, 255))
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text((AppLocalizations.of(context)!.contrastJustPassed),
+                            style: const TextStyle(color: Color.fromARGB(255, 0, 233, 255))
                         ),
                       ),
                     )
@@ -80,11 +84,13 @@ class ContrastRatio extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
+                    width: 20,
+                    height: 80 ,
                     color: const Color.fromARGB(255, 160,176, 161),
-                    child: const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text("Failed with 2.3:1, HEX: #ffffff on #a0b0a1.",
-                        style: TextStyle(color: Colors.white)
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text((AppLocalizations.of(context)!.contrastFailed),
+                        style: const TextStyle(color: Colors.white)
                             ),
                     ),
                 )
@@ -94,11 +100,13 @@ class ContrastRatio extends StatelessWidget {
                 ),
                 Expanded(
                     child: Container(
+                      width: 20,
+                      height: 80 ,
                       color: const Color.fromARGB(255, 0,132, 161),
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text("Just failed with 4.4:1, HEX: #ffffff on #0083a1",
-                            style: TextStyle(color: Colors.white)
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text((AppLocalizations.of(context)!.contrastJustFailed),
+                            style: const TextStyle(color: Colors.white)
                         ),
                       ),
                     )
@@ -116,11 +124,13 @@ class ContrastRatio extends StatelessWidget {
                 ),
                 Expanded(
                     child: Container(
+                      width: 20,
+                      height: 80 ,
                       color: const Color.fromARGB(255, 187,134, 252),
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text("Failed with contrast ratio of? HEX #ffffff on #bb86fc ",
-                            style: TextStyle(color: Colors.white)
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text((AppLocalizations.of(context)!.contrastFailedWith),
+                            style: const TextStyle(color: Colors.white)
                         ),
                       ),
                     )
@@ -130,11 +140,13 @@ class ContrastRatio extends StatelessWidget {
                 ),
                 Expanded(
                     child: Container(
+                      width: 20,
+                      height: 80 ,
                       color: const Color.fromARGB(255, 0,100, 0),
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text("Passed with contrast ratio of? HEX #ffffff on #006400 ",
-                            style: TextStyle(color: Colors.white)
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text((AppLocalizations.of(context)!.contrastPassedWith),
+                            style: const TextStyle(color: Colors.white)
                         ),
                       ),
                     )

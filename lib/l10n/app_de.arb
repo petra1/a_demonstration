@@ -2,7 +2,17 @@
   "homeHeader": "Home",
   "alternativeTextHeader": "Alternativtext",
   "contactHeader": "Kontakt & Datenschutz",
+
+
   "contrastHeader": "Kontrast Verhältnis",
+  "contrastDescription": "Dem Kontrastverhältnis wird bei der Entwicklung mobiler Apps oft nicht genügend Aufmerksamkeit geschenkt. Gerade bei der mobilen Nutzung ist ein gutes Kontrastverhältnis jedoch für alle Nutzenden wichtig, z.B. bei der Nutzung mobiler Geräte im Freien bei Sonnenschein. Nachfolgend finden Sie einige Beispiele für gute und schlechte Kontrastverhältnisse",
+  "contrastPassed": "Bestanden mit 21.0:1, HEX: #ffffff auf #000000.",
+  "contrastJustPassed": "Gerade noch bestanden mit 4,5:1, HEX: #00e9ff auf #5a4dad",
+  "contrastFailed": "Nicht bestanden mit 2.3:1, HEX: #ffffff auf #a0b0a1",
+  "contrastJustFailed": "Knapp nicht bestanden mit 4.4:1, HEX: #ffffff auf #0083a1",
+  "contrastFailedWith": "Nicht bestanden mit einem Kontrastverhälnis von? HEX #ffffff auf #bb86fc",
+  "contrastPassedWith": "Bestanden mit einem Kontrastverhälnis von? HEX #ffffff auf #006400",
+
   "editFieldHeader": "Eingabefelder",
   "headingsHeader": "Überschriften",
   "helpHeader": "Hilfe",
