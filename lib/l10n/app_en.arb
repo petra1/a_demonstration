@@ -7,6 +7,39 @@
   "@alternativeTextHeader": {
     "description": "Heading Alternative Text"
   },
+  "alternativeTextDescription": "The following will show what is read by TalkBack in the three most common situations (no alternative text, decorative graphics, and informative graphics).",
+  "@alternativeTextDescription": {
+    "description": "Description for Alternative Text"
+  },
+  "noAlternativeTextHeading": "No alternative text",
+  "@noAlternativeTextHeading": {
+    "description": "Heading No alternative text"
+  },
+
+  "noAlternativeDescription": "In this example, the alternative text was intentionally omitted. In practice, it happens very often that the alternative text is omitted by mistake.",
+  "@noAlternativeDescription": {
+    "description": "Description No alternative text"
+  },
+  "decorativeGraphicsHeading": "Decorative Graphics",
+  "@decorativeGraphicsHeading": {
+    "description": "Heading Decorative Graphics"
+  },
+  "decorativeGraphicsDescription": "In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that TalkBack ignores the graphic and does not output unnecessary text.s",
+  "@decorativeGraphicsDescription": {
+    "description": "Description Decorative Graphics"
+  },
+  "informativeGraphicsHeading": "Informative Graphic",
+  "@informativeGraphicsHeading": {
+    "description": "Heading Informative Graphic"
+  },
+  "informativeGraphicsDescription": "In this example, the graphic was assumed to be informative, so it was provided with an alternative text.",
+  "@informativeGraphicsDescription": {
+    "description": "Description informative Graphics"
+  },
+  "informativeGraphicsAlternativeText": "wheelchair accessible",
+  "@informativeGraphicsAlternativeText": {
+    "description": "Informative graphics alternative text"
+  },
   "contactHeader": "Contact & Privacy",
   "@contactHeader": {
     "description": "Heading Contact & Privacy"
@@ -15,7 +48,6 @@
   "@editFieldHeader": {
     "description": "Heading Edit Fields"
   },
-
   "contrastHeader": "Contrast Ratio",
   "@contrastHeader": {
     "description": "Heading Contrast Ratio"
@@ -48,15 +80,15 @@
   "@contrastPassedWith": {
     "description": "Heading Contrast Ratio"
   },
-
-
   "headingsHeader": "Headings",
   "@headingsHeader": {
     "description": "Heading Headings"
-  },"helpHeader": "Help",
+  },
+  "helpHeader": "Help",
   "@helpHeader": {
     "description": "Heading Help"
-  },"imageButtonHeader": "Image Button",
+  },
+  "imageButtonHeader": "Image Button",
   "@imageButtonHeader": {
     "description": "Heading Image Button"
   },

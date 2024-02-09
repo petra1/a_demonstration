@@ -3,19 +3,25 @@ import 'package:a_demonstration/navbar.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
+import 'dart:ui';
+import 'package:flutter/widgets.dart';
 
 
 main() {
   runApp(const MainScreen());
 }
 
+extension  DarkMode on BuildContext {
+bool get isDarkMode {
+  return MediaQuery.of(this).platformBrightness == Brightness.dark;
+}
+}
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
         debugShowCheckedModeBanner: false,
         localizationsDelegates: [
           AppLocalizations.delegate,
@@ -26,7 +32,19 @@ class MainScreen extends StatelessWidget {
         supportedLocales: [
           Locale("en"),
           Locale("de"),
+
         ],
+      themeMode: ThemeMode.system,
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.red,
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+
+
+
         home: Home(),
     );
   }
@@ -38,6 +56,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+
    drawer:  const NavBar(),
       appBar: AppBar(
         backgroundColor:  const Color.fromARGB(255, 0, 100, 0),

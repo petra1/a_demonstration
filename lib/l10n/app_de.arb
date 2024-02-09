@@ -1,6 +1,17 @@
 {
   "homeHeader": "Home",
   "alternativeTextHeader": "Alternativtext",
+  "alternativeTextDescription": "Im Folgenden wird gezeigt, was von TalkBack in den drei häufigsten Situationen vorgelesen wird (kein Alternativtext, dekorative Grafiken und informative Grafiken). ",
+  "noAlternativeTextHeading": "Fehlender Alternativtext",
+  "noAlternativeDescription": "In diesem Beispiel wurde der Alternativtext absichtlich weggelassen. In der Praxis kommt es sehr oft vor, dass der Alternativtext versehentlich weggelassen wird.",
+  "decorativeGraphicsHeading": "Dekorative Grafiken",
+  "decorativeGraphicsDescription": "Diese Grafik ist rein dekorativ, und der Alternativtext wurde leer gelassen, damit TalkBack die Grafik ignoriert und kein unnötigen Text ausgibt.",
+  "informativeGraphicsHeading": "Informative Grafiken",
+  "informativeGraphicsDescription": "In diesem Beispiel wurde davon ausgegangen, dass die Grafik informativ ist, weshalb sie mit einem Alternativtext versehen wurde.",
+  "informativeGraphicsAlternativeText": "rollstuhlgängig",
+
+
+
   "contactHeader": "Kontakt & Datenschutz",
 
 
