@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-class ImageButtons extends StatelessWidget {
+class ImageButtons extends StatefulWidget {
   const ImageButtons({super.key});
+  @override
+  State<ImageButtons> createState() {
+    return _ImageButtonsState();
+  }
+}
+
+class _ImageButtonsState extends State<ImageButtons> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,15 +29,27 @@ class ImageButtons extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20,),
-
-          const SizedBox(
+           SizedBox(
             width: 600,
             child: Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Align(
                 alignment: Alignment.topLeft,
-                child: Text("This example shows how TalkBack behaves with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.",
-                  style: TextStyle(fontSize: 16),
+                child: Text((AppLocalizations.of(context)!.imageButtonTextDescription2),
+                  style: const TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+          ),
+            const SizedBox(height: 20,),
+           SizedBox(
+            width: 600,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Align(
+                alignment: Alignment.topLeft,
+                child: Text((AppLocalizations.of(context)!.imageButtonTextDescription1),
+                  style: const TextStyle(fontSize: 16),
                 ),
               ),
             ),

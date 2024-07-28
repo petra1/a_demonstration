@@ -48,6 +48,18 @@
   "@editFieldHeader": {
     "description": "Heading Edit Fields"
   },
+  "editFieldTextDescription1": "In the following, we will show how TalkBack behaves when the visually visible labels have not been linked to the corresponding input field.",
+  "@editFieldTextDescription1": {
+  "description": "Editfield Text Description 1 "
+  },
+   "editFieldTextDescription2": "In the first input field, the link to the visible label was intentionally omitted. The second is correctly linked to the label.",
+  "@editFieldTextDescription2": {
+  "description": "Editfield Text Description 2"
+  },
+
+
+
+
   "contrastHeader": "Contrast Ratio",
   "@contrastHeader": {
     "description": "Heading Contrast Ratio"
@@ -84,17 +96,29 @@
   "@headingsHeader": {
     "description": "Heading Headings"
   },
-  "helpHeader": "Help",
-  "@helpHeader": {
-    "description": "Heading Help"
-  },
+ 
   "imageButtonHeader": "Image Button",
   "@imageButtonHeader": {
     "description": "Heading Image Button"
   },
+  "imageButtonTextDescription1": "This example shows how TalkBack behaves with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.",
+  "@imageButtonTextDescription1": {
+  "description": "Text Description Image Button 1"
+  },
+
+  "imageButtonTextDescription2": "In the first graphical button, the alternative text was intentionally omitted and the target was not adjusted. The second graphic button, on the other hand, has been labelled correctly and the touch target has been adjusted  so that the button is displayed larger and is therefore easier to use.",
+  "@imageButtonTextDescription2": {
+    "description": "Text Description Image Button 2"
+  },
+
+
   "tabOrderHeader": "Tab Order",
   "@tabOrderHeader": {
     "description": "Heading Tab Order"
+  },
+  "helpHeader": "Help",
+  "@helpHeader": {
+    "description": "Heading Help"
   }
 }
 
