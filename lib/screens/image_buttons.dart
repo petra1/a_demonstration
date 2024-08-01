@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:a_demonstration/main.dart';
 
 class ImageButtons extends StatefulWidget {
   const ImageButtons({super.key});
@@ -19,36 +20,52 @@ class _ImageButtonsState extends State<ImageButtons> {
       ),
       body: Column(
         children: [
-          const SizedBox(height: 40,),
+          const SizedBox(
+            height: 40,
+          ),
           Center(
             child: Semantics(
               header: true,
-              child:
-              Text((AppLocalizations.of(context)!.imageButtonHeader),
-                style: const TextStyle(fontSize: 22), ),
-            ),
-          ),
-          const SizedBox(height: 20,),
-           SizedBox(
-            width: 600,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Align(
-                alignment: Alignment.topLeft,
-                child: Text((AppLocalizations.of(context)!.imageButtonTextDescription2),
-                  style: const TextStyle(fontSize: 16),
-                ),
+              child: Text(
+                (AppLocalizations.of(context)!.imageButtonHeader),
+                style: const TextStyle(fontSize: 22),
               ),
             ),
           ),
-            const SizedBox(height: 20,),
-           SizedBox(
+          const SizedBox(
+            height: 20,
+          ),
+          SizedBox(
             width: 600,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Align(
                 alignment: Alignment.topLeft,
-                child: Text((AppLocalizations.of(context)!.imageButtonTextDescription1),
+                child: platformName == 'iOS'
+                    ? Text(
+                        (AppLocalizations.of(context)!
+                            .iosImageButtonTextDescription1),
+                        style: const TextStyle(fontSize: 16),
+                      )
+                    : Text(
+                        (AppLocalizations.of(context)!
+                            .imageButtonTextDescription1),
+                        style: const TextStyle(fontSize: 16),
+                      ),
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          SizedBox(
+            width: 600,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Align(
+                alignment: Alignment.topLeft,
+                child: Text(
+                  (AppLocalizations.of(context)!.imageButtonTextDescription2),
                   style: const TextStyle(fontSize: 16),
                 ),
               ),
@@ -56,7 +73,6 @@ class _ImageButtonsState extends State<ImageButtons> {
           ),
         ],
       ),
-
     );
   }
 }

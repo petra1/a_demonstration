@@ -1,3 +1,4 @@
+import 'package:a_demonstration/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -27,12 +28,20 @@ class EditFields extends StatelessWidget {
             width: 600,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Align(
-                alignment: Alignment.topLeft,
-                child: Text((AppLocalizations.of(context)!.editFieldTextDescription1),
-                  style: const TextStyle(fontSize: 16),
+               child: Align(
+                  alignment: Alignment.topLeft,
+                  child: platformName == 'iOS'
+                      ? Text(
+                          (AppLocalizations.of(context)!
+                              .iosEditFieldTextDescription1),
+                          style: const TextStyle(fontSize: 16),
+                        )
+                      : Text(
+                          (AppLocalizations.of(context)!
+                              .editFieldTextDescription1),
+                          style: const TextStyle(fontSize: 16),
+                        ),
                 ),
-              ),
             ),
           ),
            const SizedBox(height: 20,),

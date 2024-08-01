@@ -24,7 +24,7 @@
   "@decorativeGraphicsHeading": {
     "description": "Heading Decorative Graphics"
   },
-  "decorativeGraphicsDescription": "In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that TalkBack ignores the graphic and does not output unnecessary text.s",
+  "decorativeGraphicsDescription": "In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that TalkBack ignores the graphic and does not output unnecessary text.",
   "@decorativeGraphicsDescription": {
     "description": "Description Decorative Graphics"
   },
@@ -96,6 +96,7 @@
   "@headingsHeader": {
     "description": "Heading Headings"
   },
+
  
   "imageButtonHeader": "Image Button",
   "@imageButtonHeader": {
@@ -116,10 +117,46 @@
   "@tabOrderHeader": {
     "description": "Heading Tab Order"
   },
+
+   "tabOrderDescription1": "People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.",
+  "@tabOrderDescription1": {
+    "description": "Description 1 Tab Order"
+  },
+
+ "tabOrderDescription2": "In the first example, the focus order was intentionally ignored, but in the second example, the focus order is correct.",
+  "@tabOrderDescription2": {
+    "description": "Description 2 Tab Order"
+  },
+
   "helpHeader": "Help",
   "@helpHeader": {
     "description": "Heading Help"
+  },
+
+
+
+
+
+"iosImageButtonTextDescription1": "This example shows how VoiceOver behaves with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.",
+  "@iosImageButtonTextDescription1": {
+  "description": "iOS Text Description Image Button 1"
+  },
+
+ "iosAlternativeTextDescription": "The following will show what is read by VoiceOver in the three most common situations (no alternative text, decorative graphics, and informative graphics).",
+  "@iosAlternativeTextDescription": {
+    "description": "iOS Description for Alternative Text"
+  },
+
+  "iosDecorativeGraphicsDescription": "In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that VoiceOver ignores the graphic and does not output unnecessary text.",
+  "@iosDecorativeGraphicsDescription": {
+    "description": "iOS Description Decorative Graphics"
+  },
+  
+ "iosEditFieldTextDescription1": "In the following, we will show how VoiceOver behaves when the visually visible labels have not been linked to the corresponding input field.",
+  "@iosEditFieldTextDescription1ditFieldTextDescription1": {
+  "description": "iOS Editfield Text Description 1 "
   }
+
 }
 
 
