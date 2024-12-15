@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "A Demonstration",
+              "A  Demonstration",
               style: TextStyle(
                   color: Color.fromARGB(
                     255,
