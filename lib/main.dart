@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:a_demonstration/app_image.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,6 +43,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+           AppImage(),
+           SizedBox(height: 40,),
             Text(
               "A  Demonstration",
               style: TextStyle(
