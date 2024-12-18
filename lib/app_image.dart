@@ -10,7 +10,7 @@ class AppImage extends StatelessWidget {
         width: 200,
         height: 200,
         decoration: BoxDecoration(
-          image: const DecorationImage(image: AssetImage('assets/images/ic_logo-playstore.png')),
+          image: const DecorationImage(image: AssetImage('assets/images/ic_logo.png')),
           border: Border.all(color: Colors.black, width: 1.0),
           borderRadius: BorderRadius.circular(200),
         ),
