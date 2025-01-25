@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:a_demonstration/app_image.dart';
+import 'package:a_demonstration/widgets/app_image.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class HomePage extends StatefulWidget {
-  const HomePage({super.key, required this.title});
+const HomePage({super.key, required this.title});
 
   final String title;
 
@@ -15,6 +16,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 0, 100, 0),
+          title: Text(AppLocalizations.of(context)!.helloWorld),
       ),
       body: const Center(
         child: Column(
