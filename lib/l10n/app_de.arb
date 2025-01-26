@@ -1,3 +1,14 @@
 {
-    "helloWorld": "Hollo Welt!"
+    
+    "home": "Home",
+    "alternativeText": "Alternativetext",
+    "imageButtons": "Grafische Schalter",
+    "editFields": "Eingabefelder",
+    "contrastRatio": "Kontrastverhältnis",
+    "focusOrder": "Fokus-Reihenfolge",
+    "focusVisible": "Focus Sichtbar",
+    "language": "Sprache",
+    "privacyContact": "Datenschutz & Kontakt",
+    "help": "Hilfe",
+    "about": "Über die App"
 }

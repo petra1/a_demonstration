@@ -1,8 +1,49 @@
 {
   "@@locale": "en",
 
-  "helloWorld": "Hello World!",
-  "@helloWorld": {
-    "description": "The conventional newborn programmer greeting"
-  }
+ 
+  "home": "Home",
+  "@home": {
+    "description": "Home"
+  },
+  "alternativeText": "Alternative Text",
+  "@home": {
+    "description": "Alternative Text"
+  },
+  "imageButtons": "Image Buttons",
+  "@imageButtons": {
+    "description": "Image Buttons"
+  },
+  "editFields": "Edit Fields",
+  "@editFields": {
+    "description": "Edit Fields"
+  },
+  "contrastRatio": "Contrast Ratio",
+  "@contrastRatio": {
+    "description": "Contrast Ratio"
+  },
+  "focusOrder": "Focus Order",
+  "@focusOrder": {
+    "description": "Focus Orde"
+  },
+  "focusVisible": "Focus Visible",
+  "@focusVisible": {
+    "description": "Focus Visible"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language"
+   },
+  "privacyContact": "Privacy & Contact",
+  "@privacyContact": {
+    "description": "Privacy & Contact"
+  },
+  "help": "Help",
+  "@help": {
+    "description": "Help"
+  },
+  "about": "About App",
+  "@about": {
+    "description": "About App"
+  } 
 }

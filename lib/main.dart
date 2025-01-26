@@ -27,8 +27,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color.fromARGB(255, 0, 100, 0)),
+          seedColor: const Color.fromARGB(255, 0, 100, 0),
+        ),
         useMaterial3: true,
+        appBarTheme: AppBarTheme(
+          iconTheme: IconThemeData(color: Colors.white),
+        ),
       ),
       home: const HomePage(title: ''),
     );

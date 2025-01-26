@@ -1,8 +1,10 @@
+import 'package:a_demonstration/widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:a_demonstration/widgets/app_image.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+
 class HomePage extends StatefulWidget {
-const HomePage({super.key, required this.title});
+  const HomePage({super.key, required this.title});
 
   final String title;
 
@@ -16,14 +18,18 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 0, 100, 0),
-          title: Text(AppLocalizations.of(context)!.helloWorld),
+        
+      ),
+      drawer: MainDrawer(
       ),
       body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-           AppImage(),
-           SizedBox(height: 40,),
+            AppImage(),
+            SizedBox(
+              height: 40,
+            ),
             Text(
               "A  Demonstration",
               style: TextStyle(
