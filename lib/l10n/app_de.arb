@@ -1,8 +1,9 @@
 {
     
     "home": "Home",
-    "alternativeText": "Alternativetext",
+    "alternativeText": "Alternativtext",
     "imageButtons": "Grafische Schalter",
+    "headings": "Überschriften",
     "editFields": "Eingabefelder",
     "contrastRatio": "Kontrastverhältnis",
     "focusOrder": "Fokus-Reihenfolge",
@@ -10,5 +11,19 @@
     "language": "Sprache",
     "privacyContact": "Datenschutz & Kontakt",
     "help": "Hilfe",
-    "about": "Über die App"
+    "about": "Über die App",
+
+
+    "altDescription": "Im Folgenden wird gezeigt, was von Screenreader in den drei häufigsten Situationen vorgelesen wird (kein Alternativtext, dekorative Grafiken und informative Grafiken).",
+    "noAltText": "Fehlender Alternativtext",
+    "noAltDescription": "In diesem Beispiel wurde der Alternativtext absichtlich weggelassen. In der Praxis kommt es sehr oft vor, dass der Alternativtext versehentlich weggelassen wird.",
+    "decorativeGraphics": "Dekorative Grafiken",
+    "decorativeGraphicDescriptions": "Diese Grafik ist rein dekorativ, und der Alternativtext wurde leer gelassen, damit Screenreader die Grafik ignoriert und kein unnötigen Text ausgibt.",
+    "informativeGraphic": "Informative Grafik",
+    "informativeGraphicDescription": "In diesem Beispiel wurde davon ausgegangen, dass die Grafik informativ ist, weshalb sie mit einem Alternativtext versehen wurde.",
+
+    "description1ImageButton": "Dieses Beispiel zeigt, wie sich Screenreader bei grafischen Schaltflächen verhält, die keinen Alternativtext enthalten, und zeigt gleichzeitig, wie die Schaltflächen für Menschen mit eingeschränkter Feinmotorik besser nutzbar gemacht werden können.",
+    "description2ImageButton": "Bei der ersten grafischen Schaltfläche wurde der Alternativtext absichtlich weggelassen und auch das Touch-Target wurde nicht angepasst. Die zweite grafische Schaltfläche hingegen wurde korrekt beschriftet und das Touch-Target wurde angepasst, so dass die Schaltfläche größer dargestellt wird und somit leichter zu bedienen ist."
+    
 }
+

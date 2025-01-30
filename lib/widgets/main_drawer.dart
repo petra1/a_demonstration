@@ -1,3 +1,6 @@
+import 'package:a_demonstration/pages/graphics.dart';
+import 'package:a_demonstration/pages/home_page.dart';
+import 'package:a_demonstration/pages/image_button.dart';
 import 'package:a_demonstration/widgets/app_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -8,155 +11,192 @@ class MainDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: Column(
-        children: [
-          DrawerHeader(
-            padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Theme.of(context).colorScheme.primary,
-                  Theme.of(context).colorScheme.primary.withAlpha(200)
+      child: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            DrawerHeader(
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Theme.of(context).colorScheme.primary,
+                    Theme.of(context).colorScheme.primary.withAlpha(240),
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+              ),
+              child: Column(
+                children: [
+                  const AppImage(),
+                  Text(
+                    'Ritter Apps',
+                    style: Theme.of(context).textTheme.titleSmall!.copyWith(
+                          color: Colors.white,
+                        ),
+                  )
                 ],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
               ),
             ),
-            child: Column(
-              children: [
-                const AppImage(),
-                Text(
-                  'Ritter Apps',
-                  style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                        color: Colors.white,
-                      ),
-                )
-              ],
+            ListTile(
+              leading: Icon(
+                Icons.home,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.home,
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ),
+                );
+              },
             ),
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.home,
-              size: 24,
-              color: Colors.black,
+            ListTile(
+              leading: Icon(
+                Icons.gif,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.alternativeText,
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Graphics(),
+                  ),
+                );
+              },
             ),
-            title: Text(
-              AppLocalizations.of(context)!.home,
+            ListTile(
+              leading: Icon(
+                Icons.radio_button_checked_outlined,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.imageButtons,
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ImageButton(),
+                  ),
+                );
+              },
             ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.gif,
-              size: 24,
-              color: Colors.black,
+            ListTile(
+              leading: Icon(
+                Icons.article_rounded,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.headings,
+              ),
+              onTap: () {},
             ),
-            title: Text(
-              AppLocalizations.of(context)!.alternativeText,
+            ListTile(
+              leading: Icon(
+                Icons.edit,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.editFields,
+              ),
+              onTap: () {},
             ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.radio_button_checked_outlined,
-              size: 24,
-              color: Colors.black,
+            ListTile(
+              leading: Icon(
+                Icons.brightness_4_outlined,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.contrastRatio,
+              ),
+              onTap: () {},
             ),
-            title: Text(
-              AppLocalizations.of(context)!.imageButtons,
+            ListTile(
+              leading: Icon(
+                Icons.arrow_right_alt,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.focusOrder,
+              ),
+              onTap: () {},
             ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.edit,
-              size: 24,
-              color: Colors.black,
+            ListTile(
+              leading: Icon(
+                Icons.visibility,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.focusVisible,
+              ),
+              onTap: () {},
             ),
-            title: Text(
-              AppLocalizations.of(context)!.editFields,
+            ListTile(
+              leading: Icon(
+                Icons.language,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.language,
+              ),
+              onTap: () {},
             ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.brightness_4_outlined,
-              size: 24,
-              color: Colors.black,
+            Divider(),
+           
+            ListTile(
+              leading: Icon(
+                Icons.contact_emergency,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.privacyContact,
+              ),
+              onTap: () {},
             ),
-            title: Text(
-              AppLocalizations.of(context)!.contrastRatio,
+            ListTile(
+              leading: Icon(
+                Icons.help,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.help,
+              ),
+              onTap: () {},
             ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.arrow_right_alt,
-              size: 24,
-              color: Colors.black,
+            ListTile(
+              leading: Icon(
+                Icons.description,
+                size: 24,
+                color: Colors.black,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.about,
+              ),
+              onTap: () {},
             ),
-            title: Text(
-              AppLocalizations.of(context)!.focusOrder,
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.visibility,
-              size: 24,
-              color: Colors.black,
-            ),
-            title: Text(
-              AppLocalizations.of(context)!.focusVisible,
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.language,
-              size: 24,
-              color: Colors.black,
-            ),
-            title: Text(
-              AppLocalizations.of(context)!.language,
-            ),
-            onTap: () {},
-          ),
-          Divider(),
-          ListTile(
-            leading: Icon(
-              Icons.contact_emergency,
-              size: 24,
-              color: Colors.black,
-            ),
-            title: Text(
-              AppLocalizations.of(context)!.privacyContact,
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.help,
-              size: 24,
-              color: Colors.black,
-            ),
-            title: Text(
-              AppLocalizations.of(context)!.help,
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.description,
-              size: 24,
-              color: Colors.black,
-            ),
-            title: Text(
-              AppLocalizations.of(context)!.about,
-            ),
-            onTap: () {},
-          ),
-        ],
+             SizedBox(height: 80,),
+          ],
+        ),
       ),
     );
   }

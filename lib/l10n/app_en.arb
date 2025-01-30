@@ -14,6 +14,10 @@
   "@imageButtons": {
     "description": "Image Buttons"
   },
+  "headings": "Headings",
+  "@imageButtons": {
+    "description": "Headingss"
+  },
   "editFields": "Edit Fields",
   "@editFields": {
     "description": "Edit Fields"
@@ -45,5 +49,45 @@
   "about": "About App",
   "@about": {
     "description": "About App"
-  } 
+  },
+
+"altDescription": "The following will show what is read by screen readers in the three most common situations (no alternative text, decorative graphics, and informative graphics).",
+  "@altDescription": {
+    "description": "Description for  alternative text"
+  },
+  "noAltText": "No Alternative Text",
+  "@noAltText": {
+    "description": "No Alternative Text"
+  },
+  "noAltDescription": "In this example, the alternative text was intentionally omitted. In practice, it happens very often that the alternative text is omitted by mistake",
+  "@noAltDescription": {
+    "description": "Description for no alternative text"
+  },
+  "decorativeGraphics": "Decorative Graphics",
+  "@decorativeGraphics": {
+    "description": "Decorative Graphics"
+  } ,
+  "decorativeGraphicDescriptions": "In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that screen readers ignores the graphic and does not output unnecessary text.",
+  "@decorativeGraphicDescription": {
+    "description": "Decorative Graphic Description"
+  },
+  "informativeGraphic": "Informative Graphic",
+  "@informativeGraphi": {
+    "description": "Informative Graphic"
+  },
+  "informativeGraphicDescription": "In this example, the graphic was assumed to be informative, so it was provided with an alternative text.",
+  "@informativeGraphi": {
+    "description": "Informative Graphic Description"
+  },
+
+  "description1ImageButton": "This example shows how screen readers behave with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.",
+  "@description1ImageButton": {
+    "description": "Image Button Description 1"
+  },
+  "description2ImageButton": "In the first input field, the link to the visible label was intentionally omitted. The second is correctly linked to the label.",
+  "@description2ImageButton": {
+    "description": "Image Button Description 2"
+  }                          
 }
+
+

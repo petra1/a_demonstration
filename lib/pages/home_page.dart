@@ -4,9 +4,8 @@ import 'package:a_demonstration/widgets/app_image.dart';
 
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key, required this.title});
+  const HomePage({super.key, });
 
-  final String title;
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -18,7 +17,6 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 0, 100, 0),
-        
       ),
       drawer: MainDrawer(
       ),

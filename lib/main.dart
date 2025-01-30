@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
           iconTheme: IconThemeData(color: Colors.white),
         ),
       ),
-      home: const HomePage(title: ''),
+      home: const HomePage(),
     );
   }
 }
