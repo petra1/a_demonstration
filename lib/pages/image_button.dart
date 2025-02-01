@@ -51,10 +51,11 @@ class _ImageButtonState extends State<ImageButton> {
               ),
               Text(
               AppLocalizations.of(context)!.question1ImageButton
+              // This text should be chabged using...
               ),
               IconButton(
                 onPressed: () {
-               
+              // ...this  button.
                 },
                 icon: Icon(Icons.help),
               ),
