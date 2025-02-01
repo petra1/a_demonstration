@@ -87,7 +87,16 @@
   "description2ImageButton": "In the first input field, the link to the visible label was intentionally omitted. The second is correctly linked to the label.",
   "@description2ImageButton": {
     "description": "Image Button Description 2"
-  }                          
+  },
+  "question1ImageButton": "Question #1: What is the current version of WCAG?",
+  "@question1ImageButton": {
+    "description": "Question #1"
+  },
+  "answer1ImageButton": "The current version of WCAG is 2.1.",
+  "@answer1ImageButton": {
+    "description": "Answer #1"
+  }
+
+
+
 }
-
-

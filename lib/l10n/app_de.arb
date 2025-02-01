@@ -23,7 +23,8 @@
     "informativeGraphicDescription": "In diesem Beispiel wurde davon ausgegangen, dass die Grafik informativ ist, weshalb sie mit einem Alternativtext versehen wurde.",
 
     "description1ImageButton": "Dieses Beispiel zeigt, wie sich Screenreader bei grafischen Schaltflächen verhält, die keinen Alternativtext enthalten, und zeigt gleichzeitig, wie die Schaltflächen für Menschen mit eingeschränkter Feinmotorik besser nutzbar gemacht werden können.",
-    "description2ImageButton": "Bei der ersten grafischen Schaltfläche wurde der Alternativtext absichtlich weggelassen und auch das Touch-Target wurde nicht angepasst. Die zweite grafische Schaltfläche hingegen wurde korrekt beschriftet und das Touch-Target wurde angepasst, so dass die Schaltfläche größer dargestellt wird und somit leichter zu bedienen ist."
-    
+    "description2ImageButton": "Bei der ersten grafischen Schaltfläche wurde der Alternativtext absichtlich weggelassen und auch das Touch-Target wurde nicht angepasst. Die zweite grafische Schaltfläche hingegen wurde korrekt beschriftet und das Touch-Target wurde angepasst, so dass die Schaltfläche größer dargestellt wird und somit leichter zu bedienen ist.",
+    "question1ImageButton": "Frage 1: Was ist die aktuelle Version der WCAG?",
+    "answer1ImageButton": "Die aktuelle Version der WCAG ist 2.2."
 }
 

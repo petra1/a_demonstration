@@ -6,10 +6,13 @@ class ImageButton extends StatefulWidget {
 
   @override
   State<ImageButton> createState() => _ImageButtonState();
+  
 }
 
+
 class _ImageButtonState extends State<ImageButton> {
-  
+ 
+
 
   @override
   Widget build(BuildContext context) {
@@ -47,10 +50,12 @@ class _ImageButtonState extends State<ImageButton> {
                 ),
               ),
               Text(
-              'dynamic Questen 2'
+              AppLocalizations.of(context)!.question1ImageButton
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+               
+                },
                 icon: Icon(Icons.help),
               ),
               Text('dynamic Questen 2'),
@@ -75,4 +80,7 @@ class _ImageButtonState extends State<ImageButton> {
       ),
     );
   }
+
 }
+
+
