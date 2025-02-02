@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'dart:ui';
 
 class ImageButton extends StatefulWidget {
   const ImageButton({super.key});
 
   @override
   State<ImageButton> createState() => _ImageButtonState();
-  
 }
 
+var text1 = 0;
+var text2 = 0;
 
 class _ImageButtonState extends State<ImageButton> {
- 
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,40 +34,64 @@ class _ImageButtonState extends State<ImageButton> {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 15.0),
               Text(
                 AppLocalizations.of(context)!.description1ImageButton,
                 style: TextStyle(
                   fontSize: 16,
                 ),
               ),
-              SizedBox(height: 5),
+              SizedBox(height: 15.0),
               Text(
-                AppLocalizations.of(context)!.description2ImageButton,
+                text1 == 0
+                    ? AppLocalizations.of(context)!.question1ImageButton
+                    : AppLocalizations.of(context)!.answer1ImageButton,
                 style: TextStyle(
                   fontSize: 16,
                 ),
               ),
-              Text(
-              AppLocalizations.of(context)!.question1ImageButton
-              // This text should be chabged using...
-              ),
               IconButton(
                 onPressed: () {
-              // ...this  button.
+                  setState(() {
+                    text1 = 1;
+                  });
                 },
                 icon: Icon(Icons.help),
               ),
-              Text('dynamic Questen 2'),
-              IconButton(
-                iconSize: 48,
-                onPressed: () {},
-                icon: Icon(
-                  Icons.help,
+              SizedBox(
+                height: 15.0,
+              ),
+              Text(
+                text2 == 0
+                    ? AppLocalizations.of(context)!.question1ImageButton
+                    : AppLocalizations.of(context)!.answer1ImageButton, 
+                  
+                style: TextStyle(
+                  fontSize: 16,
                 ),
               ),
+              IconButton(
+                iconSize: 48,
+                onPressed: () {
+                  setState(() {
+                    text2 = 1;
+                  });
+                },
+                icon: Icon(
+                  Icons.help,
+                  semanticLabel: AppLocalizations.of(context)!.help ,
+                ),
+              ),
+              SizedBox(
+                height: 40,
+              ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    text1 = 0;
+                    text2 = 0;
+                  });
+                },
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
                 child: Text(
                   'Reset questions',
@@ -81,7 +104,4 @@ class _ImageButtonState extends State<ImageButton> {
       ),
     );
   }
-
 }
-
-

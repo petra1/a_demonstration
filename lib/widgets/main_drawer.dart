@@ -1,3 +1,4 @@
+import 'package:a_demonstration/pages/contrast_ratio.dart';
 import 'package:a_demonstration/pages/graphics.dart';
 import 'package:a_demonstration/pages/home_page.dart';
 import 'package:a_demonstration/pages/image_button.dart';
@@ -124,7 +125,14 @@ class MainDrawer extends StatelessWidget {
               title: Text(
                 AppLocalizations.of(context)!.contrastRatio,
               ),
-              onTap: () {},
+              onTap: () {
+                 Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ContrastRatio(),
+                  ),
+                );
+              },
             ),
             ListTile(
               leading: Icon(
