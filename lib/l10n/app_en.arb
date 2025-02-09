@@ -1,0 +1,140 @@
+{
+  "@@locale": "en",
+
+ 
+  "home": "Home",
+  "@home": {
+    "description": "Home"
+  },
+  "alternativeText": "Alternative Text",
+  "@home": {
+    "description": "Alternative Text"
+  },
+  "imageButtons": "Image Buttons",
+  "@imageButtons": {
+    "description": "Image Buttons"
+  },
+  "headings": "Headings",
+  "@imageButtons": {
+    "description": "Headingss"
+  },
+  "editFields": "Edit Fields",
+  "@editFields": {
+    "description": "Edit Fields"
+  },
+  "contrastRatio": "Contrast Ratio",
+  "@contrastRatio": {
+    "description": "Contrast Ratio"
+  },
+  "focusOrder": "Focus Order",
+  "@focusOrder": {
+    "description": "Focus Orde"
+  },
+  "focusVisible": "Focus Visible",
+  "@focusVisible": {
+    "description": "Focus Visible"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language"
+  },
+  "privacyContact": "Privacy & Contact",
+  "@privacyContact": {
+    "description": "Privacy & Contact"
+  },
+  "help": "Help",
+  "@help": {
+    "description": "Help"
+  },
+  "about": "About App",
+  "@about": {
+    "description": "About App"
+  },
+
+
+"altDescription": "The following will show what is read by screen readers in the three most common situations (no alternative text, decorative graphics, and informative graphics).",
+"@altDescription": {
+  "description": "Description for  alternative text"
+},
+"noAltText": "No Alternative Text",
+"@noAltText": {
+  "description": "No Alternative Text"
+},
+"noAltDescription": "In this example, the alternative text was intentionally omitted. In practice, it happens very often that the alternative text is omitted by mistake",
+"@noAltDescription": {
+  "description": "Description for no alternative text"
+},
+"decorativeGraphics": "Decorative Graphics",
+"@decorativeGraphics": {
+  "description": "Decorative Graphics"
+} ,
+"decorativeGraphicDescriptions": "In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that screen readers ignores the graphic and does not output unnecessary text.",
+"@decorativeGraphicDescription": {
+  "description": "Decorative Graphic Description"
+},
+"informativeGraphic": "Informative Graphic",
+"@informativeGraphi": {
+  "description": "Informative Graphic"
+},
+"informativeGraphicDescription": "In this example, the graphic was assumed to be informative, so it was provided with an alternative text.",
+"@informativeGraphi": {
+  "description": "Informative Graphic Description."
+},
+
+
+"description1ImageButton": "This example shows how screen readers behave with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.",
+"@description1ImageButton": {
+  "description": "Image Button Description 1"
+},
+"description2ImageButton": "In the first input field, the link to the visible label was intentionally omitted. The second is correctly linked to the label.",
+"@description2ImageButton": {
+  "description": "Image Button Description 2"
+},
+"question1ImageButton": "Question #1: What is the current version of WCAG?",
+"@question1ImageButton": {
+  "description": "Question #1"
+},
+"answer1ImageButton": "The current version of WCAG is 2.2.",
+"@answer1ImageButton": {
+  "description": "Answer #1"
+},
+"question2ImageButton": "Question #2: When was the current version of WCAG released?",
+"@question2ImageButton": {
+  "description": "Question #2"
+},
+"answer2ImageButton": "The current version was released in October 2023.",
+"@answer2ImageButton": {
+  "description": "Answer #2"
+},
+    
+
+"contrastRadioDescription": "The contrast ratio is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g. when using mobile devices outdoors in sunshine. Below you will find some examples of good and bad contrast ratios.",
+"@contrastRadioDescription": {
+  "description": "contrast radio description"
+},
+"contrastRadioPassed": "Passed with 21.0:1, HEX: #ffffff on #000000",
+"@contrastRadioPassed": {
+  "description": "contrast radio passed"
+},
+"contrastRadioFailed": "Failed with 2.3:1, HEX: #ffffff on #a0b0a1.",
+"@contrastRadioFailed": {
+  "description": "contrast radio passed"
+},
+"contrastRadioJustPassed": "Just passed with 4.5:1, HEX: #00e9ff on #5a4dad.",
+"@contrastRadioJustPassed": {
+  "description": "contrast radio just passed"
+},
+"contrastRadioJustFailed": "Just failed with 4.4:1, HEX: #ffffff on #0083a1.",
+"@contrastRadioJustFailed": {
+  "description": "contrast radio just failed"
+},
+"contrastRadioPassedWith": "Passed with contrast ratio of? HEX #ffffff on #006400.",
+"@contrastRadioPassedWith": {
+  "description": "contrast radio passed with"
+},
+"contrastRadioFaileddWith": "Failed with contrast ratio of?  HEX  on #bb86fc.",
+"@contrastRadioFaileddWith": {
+  "description": "contrast radio failed with"
+}
+
+}

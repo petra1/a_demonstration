@@ -1,0 +1,1 @@
+ /Users/petraritter/flutter_projekts/a_demonstration/.dart_tool/flutter_build/f79f608e8abf8981e9bdc4b94db4d1c2/native_assets.yaml: 
