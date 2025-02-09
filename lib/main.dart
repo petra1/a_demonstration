@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: [
         Locale('en'), // English
-        Locale('de'), // German
+        Locale('de'), 
       ],
       title: 'Flutter Demo',
       darkTheme: ThemeData.dark().copyWith(
