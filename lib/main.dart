@@ -3,15 +3,13 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:a_demonstration/pages/home_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-
-
 var kColorScheme = ColorScheme.fromSeed(
   seedColor: const Color.fromARGB(255, 0, 100, 0),
 );
 
 var kDarkColorScheme = ColorScheme.fromSeed(
   brightness: Brightness.dark,
-  seedColor: const Color.fromARGB(255, 1, 18, 1),
+  seedColor: const Color.fromARGB(255, 0, 100, 0),
 );
 
 void main() {
@@ -25,25 +23,29 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       localizationsDelegates: [
-        AppLocalizations.delegate, 
+        AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: [
         Locale('en'), // English
-        Locale('de'), 
+        Locale('de'), // German
       ],
       title: 'Flutter Demo',
       darkTheme: ThemeData.dark().copyWith(
-          colorScheme: kDarkColorScheme,
-          appBarTheme: AppBarTheme(
-              backgroundColor:
-                  Theme.of(context).colorScheme.secondaryContainer)),
+        colorScheme: kDarkColorScheme,
+        appBarTheme: const AppBarTheme().copyWith(
+            backgroundColor:  Color.fromARGB(255, 0, 100, 0),
+            foregroundColor: Colors.white,
+          ),
+      ),
       theme: ThemeData().copyWith(
         colorScheme: kColorScheme,
-        appBarTheme: AppBarTheme(
-            backgroundColor: Theme.of(context).colorScheme.secondaryContainer),
+       appBarTheme: const AppBarTheme().copyWith(
+            backgroundColor:  Color.fromARGB(255, 0, 100, 0),
+            foregroundColor: Colors.white,
+          ),
       ),
       themeMode: ThemeMode.system,
       home: const HomePage(),

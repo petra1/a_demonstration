@@ -20,7 +20,7 @@ class MainDrawer extends StatelessWidget {
             DrawerHeader(
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.primary,
+                color: const Color.fromARGB(255, 0, 100, 0)
               ),
               child: Column(
                 children: [
@@ -28,7 +28,7 @@ class MainDrawer extends StatelessWidget {
                   Text(
                     'Ritter Apps',
                     style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                          color: Colors.black45
+                          color: Colors.white
                         ),
                   )
                 ],

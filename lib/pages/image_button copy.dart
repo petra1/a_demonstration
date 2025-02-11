@@ -1,4 +1,4 @@
-import  'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ImageButton extends StatefulWidget {
@@ -15,10 +15,7 @@ class _ImageButtonState extends State<ImageButton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.primary,
-         
-      ),
+      appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(10.0),
@@ -64,8 +61,7 @@ class _ImageButtonState extends State<ImageButton> {
               Text(
                 text2 == 0
                     ? AppLocalizations.of(context)!.question2ImageButton
-                    : AppLocalizations.of(context)!.answer2ImageButton, 
-                  
+                    : AppLocalizations.of(context)!.answer2ImageButton,
                 style: TextStyle(
                   fontSize: 16,
                 ),
@@ -79,7 +75,7 @@ class _ImageButtonState extends State<ImageButton> {
                 },
                 icon: Icon(
                   Icons.help,
-                  semanticLabel: AppLocalizations.of(context)!.help ,
+                  semanticLabel: AppLocalizations.of(context)!.help,
                 ),
               ),
               SizedBox(

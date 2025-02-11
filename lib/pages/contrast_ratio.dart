@@ -6,11 +6,7 @@ class ContrastRatio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.primary, 
-
-      
-      ),
+      appBar: AppBar(),
       body: Container(
         child: Column(
           children: [
