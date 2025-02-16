@@ -10,13 +10,17 @@ class Header extends StatefulWidget {
 
 class _HeaderState extends State<Header> {
   late final WebViewController _controller;
-
+  late var lang = '';
+  late var brigness = '';
+  
   @override
   void initState() {
     super.initState();
     _controller = WebViewController();
     _controller.loadFlutterAsset('assets/html/heading.html');
+    
   }
+  
 
   @override
   Widget build(BuildContext context) {

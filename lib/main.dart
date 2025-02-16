@@ -39,13 +39,15 @@ class MyApp extends StatelessWidget {
             backgroundColor:  Color.fromARGB(255, 0, 100, 0),
             foregroundColor: Colors.white,
           ),
+        
       ),
       theme: ThemeData().copyWith(
         colorScheme: kColorScheme,
        appBarTheme: const AppBarTheme().copyWith(
             backgroundColor:  Color.fromARGB(255, 0, 100, 0),
-            foregroundColor: Colors.white,
+            foregroundColor:  Colors.white,
           ),
+        scaffoldBackgroundColor: const Color.fromARGB(246, 243, 245, 239)
       ),
       themeMode: ThemeMode.system,
       home: const HomePage(),
