@@ -50,7 +50,7 @@ class _WebViewState extends State<WebView> {
   @override
   Widget build(BuildContext context) {
       // Get the HTML file to display based on language and theme
-    String fileName = _getHtmlFileName(context) as String;
+    //String fileName = _getHtmlFileName(context) as String;
     return Scaffold(
       appBar: AppBar(),
       body: WebViewWidget(
