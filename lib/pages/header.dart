@@ -1,32 +1,14 @@
+import 'package:a_demonstration/widgets/web_view.dart';
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
-class Header extends StatefulWidget {
+class Header extends StatelessWidget {
   const Header({super.key});
-
-  @override
-  State<Header> createState() => _HeaderState();
-}
-
-class _HeaderState extends State<Header> {
-  late final WebViewController _controller;
-  late var lang = '';
-  late var brigness = '';
-  
-  @override
-  void initState() {
-    super.initState();
-    _controller = WebViewController();
-    _controller.loadFlutterAsset('assets/html/heading.html');
-    
-  }
-  
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: WebViewWidget(controller: _controller),
+      body: WebView(),
     );
   }
 }
