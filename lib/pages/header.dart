@@ -15,7 +15,8 @@ class _HeaderState extends State<Header> {
   @override
   void initState() {
     super.initState();
-    _controller = WebViewController();
+    _controller = WebViewController()
+     ..setJavaScriptMode(JavaScriptMode.unrestricted); // add this
   }
 
   @override
@@ -40,9 +41,12 @@ class _HeaderState extends State<Header> {
 
     // Lade die ausgewählte HTML-Datei
     _controller.loadFlutterAsset(assetToLoad);
+
     return Scaffold(
       appBar: AppBar(),
-      body: WebViewWidget(controller: _controller),
+      body: WebViewWidget(controller: _controller,
+      ),
+      
     );
   }
 }

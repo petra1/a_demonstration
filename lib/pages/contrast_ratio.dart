@@ -64,13 +64,13 @@ class ContrastRatio extends StatelessWidget {
                     child: Container(
                   width: 20,
                   height: 80,
-                  color: const Color.fromARGB(255, 90, 77, 173),
+                  color: const Color.fromARGB(255, 160, 176, 161),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
                       (AppLocalizations.of(context)!.contrastRadioFailed),
                       style: const TextStyle(
-                        color: Color.fromARGB(255, 0, 233, 255),
+                        color: Colors.white
                       ),
                     ),
                   ),
@@ -89,12 +89,12 @@ class ContrastRatio extends StatelessWidget {
                     child: Container(
                   width: 20,
                   height: 80,
-                  color: const Color.fromARGB(255, 0, 132, 161),
+                  color: const Color.fromARGB(255, 90, 77, 173),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
                       (AppLocalizations.of(context)!.contrastRadioJustPassed),
-                      style: const TextStyle(color: Colors.white),
+                      style: const TextStyle(color: Color.fromARGB(255, 0, 233, 255)),
                     ),
                   ),
                 )),
@@ -105,7 +105,7 @@ class ContrastRatio extends StatelessWidget {
                     child: Container(
                   width: 20,
                   height: 80,
-                  color: const Color.fromARGB(255, 160, 176, 161),
+                  color: const Color.fromARGB(255, 0, 131, 161),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
