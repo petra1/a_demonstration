@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+    import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ImageButton extends StatefulWidget {
@@ -30,20 +30,23 @@ class _ImageButtonState extends State<ImageButton> {
                   ),
                 ),
               ),
-              SizedBox(height: 15.0),
+              const SizedBox(height: 20.0),
               Text(
                 AppLocalizations.of(context)!.description1ImageButton,
                 style: TextStyle(
                   fontSize: 16,
                 ),
               ),
-              SizedBox(height: 15.0),
-              Text(
-                text1 == 0
-                    ? AppLocalizations.of(context)!.question1ImageButton
-                    : AppLocalizations.of(context)!.answer1ImageButton,
-                style: TextStyle(
-                  fontSize: 16,
+              const SizedBox(height: 20),
+              Semantics(
+                liveRegion: true,
+                child: Text(
+                  text1 == 0
+                      ? AppLocalizations.of(context)!.question1ImageButton
+                      : AppLocalizations.of(context)!.answer1ImageButton,
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
                 ),
               ),
               IconButton(
@@ -57,12 +60,15 @@ class _ImageButtonState extends State<ImageButton> {
               SizedBox(
                 height: 15.0,
               ),
-              Text(
-                text2 == 0
-                    ? AppLocalizations.of(context)!.question2ImageButton
-                    : AppLocalizations.of(context)!.answer2ImageButton,
-                style: TextStyle(
-                  fontSize: 16,
+              Semantics(
+                liveRegion: true,
+                child: Text(
+                  text2 == 0
+                      ? AppLocalizations.of(context)!.question2ImageButton
+                      : AppLocalizations.of(context)!.answer2ImageButton,
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
                 ),
               ),
               IconButton(
@@ -74,7 +80,7 @@ class _ImageButtonState extends State<ImageButton> {
                 },
                 icon: Icon(
                   Icons.help,
-                  semanticLabel: AppLocalizations.of(context)!.help,
+                  semanticLabel: AppLocalizations.of(context)!.helpQuestion2Button,
                 ),
               ),
               SizedBox(
@@ -87,9 +93,11 @@ class _ImageButtonState extends State<ImageButton> {
                     text2 = 0;
                   });
                 },
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                style: ButtonStyle(
+                  backgroundColor: WidgetStateProperty.resolveWith(getColor),
+                ),
                 child: Text(
-                  'Reset questions',
+                  AppLocalizations.of(context)!.resetButton,
                   style: TextStyle(color: Colors.white, fontSize: 16),
                 ),
               )
@@ -99,4 +107,14 @@ class _ImageButtonState extends State<ImageButton> {
       ),
     );
   }
+}
+
+Color? getColor(Set<WidgetState> states) {
+  const Set<WidgetState> interactiveStates = <WidgetState>{
+    WidgetState.focused,
+  };
+  if (states.any(interactiveStates.contains)) {
+    return const Color.fromARGB(255, 175, 95, 90);
+  }
+  return Colors.red;
 }

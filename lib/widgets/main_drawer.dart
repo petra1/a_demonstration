@@ -1,11 +1,17 @@
 import 'package:a_demonstration/pages/contrast_ratio.dart';
 import 'package:a_demonstration/pages/graphics.dart';
 import 'package:a_demonstration/pages/header.dart';
+import 'package:a_demonstration/pages/help.dart';
 import 'package:a_demonstration/pages/home_page.dart';
 import 'package:a_demonstration/pages/image_button.dart';
+import 'package:a_demonstration/pages/tab_order.dart';
 import 'package:a_demonstration/widgets/app_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:a_demonstration/pages/edit_fields.dart';
+
+
+import '../pages/fucus_visible.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({super.key});
@@ -19,17 +25,17 @@ class MainDrawer extends StatelessWidget {
           children: [
             DrawerHeader(
               padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(244, 0, 100, 0)
-              ),
+              decoration:
+                  BoxDecoration(color: const Color.fromARGB(244, 0, 100, 0)),
               child: Column(
                 children: [
                   const AppImage(),
                   Text(
                     'Ritter Apps',
-                    style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                          color: Colors.white
-                        ),
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleSmall!
+                        .copyWith(color: Colors.white),
                   )
                 ],
               ),
@@ -110,7 +116,14 @@ class MainDrawer extends StatelessWidget {
               title: Text(
                 AppLocalizations.of(context)!.editFields,
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => EditFields(),
+                  ),
+                );
+              },
             ),
             ListTile(
               leading: Icon(
@@ -130,15 +143,22 @@ class MainDrawer extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: Icon(
-                Icons.arrow_right_alt,
-                size: 24,
-              ),
-              title: Text(
-                AppLocalizations.of(context)!.focusOrder,
-              ),
-              onTap: () {},
-            ),
+                leading: Icon(
+                  Icons.arrow_right_alt,
+                  size: 24,
+                ),
+                title: Text(
+                  AppLocalizations.of(context)!.focusOrder,
+                ),
+               onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TabOrder(),
+                  ),
+                );
+              },
+                ),
             ListTile(
               leading: Icon(
                 Icons.visibility,
@@ -147,7 +167,14 @@ class MainDrawer extends StatelessWidget {
               title: Text(
                 AppLocalizations.of(context)!.focusVisible,
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FucusVisible(),
+                  ),
+                );
+              },
             ),
             ListTile(
               leading: Icon(
@@ -178,7 +205,14 @@ class MainDrawer extends StatelessWidget {
               title: Text(
                 AppLocalizations.of(context)!.help,
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Help(),
+                  ),
+                );
+              },
             ),
             ListTile(
               leading: Icon(

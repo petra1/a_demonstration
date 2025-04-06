@@ -106,6 +106,17 @@
 "@answer2ImageButton": {
   "description": "Answer #2"
 },
+"helpQuestion2Button": "Help for question 2",
+"@helpQuestion2Button": {
+  "description": "Help for question 2"
+},
+
+"resetButton": "Reset questions",
+"@resetButton": {
+  "description": "reset button"
+},
+
+
     
 
 "contrastRadioDescription": "The contrast ratio is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g. when using mobile devices outdoors in sunshine. Below you will find some examples of good and bad contrast ratios.",
@@ -135,6 +146,76 @@
 "contrastRadioFaileddWith": "Failed with contrast ratio of?  HEX  on #bb86fc.",
 "@contrastRadioFaileddWith": {
   "description": "contrast radio failed with"
+},
+
+"editFieldsDescription1": "In the following, we will show how screen readers behave when the visually visible labels have not been linked to the corresponding input field.",
+"@editFieldsDescription1": {
+  "description": "Description1 for edit fields"
+},
+"editFieldsDescription2": "No label was intentionally used in the first edit field. The second was labelled correctly.",
+"@editFieldsDescription2": {
+  "description": "Description 2 for edit fields"
+},
+"firstEditFieldHint": "First name",
+"@firstEditFieldHint": {
+  "description": "Hint for edit field first name"
+},
+"secondEditFieldLabel": "Last name",
+"@secondEditFieldLabel": {
+  "description": "Label for edit field Last name"
+},
+"buttonDisplayFullName": "Display full Name",
+"@buttonDisplayFullName": {
+  "description": "Button to display full name"
+},
+
+"tabOrderDescription1": "People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.",
+"@tabOrderDescription1": {
+  "description": "Tab order description1"
+},
+
+
+
+
+
+
+
+"focusVisibleDescription1": "People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.",
+"@focusVisibleDescription1": {
+  "description": "Description 1 for focus visible"
+},
+"focusVisibleDescription2": "In this example, the visibility of the keyboard focus was intentionally ignored for some button. Try using a Bluetooth keyboard paired with the mobile device and try to find and activate button 3 without counting how many times you press the Tab key.",
+"@focusVisibleDescription2": {
+  "description": "Description 2 for focus visible"
+},
+"toastButton1": "You have pressed button 1.",
+"@toastButton1": {
+  "description": "Toast for button 1"
+},
+"toastButton1": "You have pressed button 1.",
+"@toastButton1": {
+  "description": "Toast for button 1"
+},
+"toastButton2": "You have pressed button 2.",
+"@toastButton2": {
+  "description": "Toast for button 2"
+},
+"toastButton3": "You have pressed button 3.",
+"@toastButton3": {
+  "description": "Toast for button 3"
+},
+"toastButton4": "You have pressed button 4.",
+"@toastButton4": {
+  "description": "Toast for button 4"
+},
+"toastButton5": "You have pressed button 5.",
+"@toastButton5": {
+  "description": "Toast for button 5"
+},
+"toastButton6": "You have pressed button 6.",
+"@toastButton1": {
+  "description": "Toast for button 6"
 }
+
 
 }

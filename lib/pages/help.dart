@@ -2,14 +2,14 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class Header extends StatefulWidget {
-  const Header({super.key});
+class Help extends StatefulWidget {
+  const Help({super.key});
 
   @override
-  State<Header> createState() => _HeaderState();
+  State<Help> createState() => _HelpState();
 }
 
-class _HeaderState extends State<Header> {
+class _HelpState extends State<Help> {
   late final WebViewController _controller;
 
   @override
@@ -27,15 +27,14 @@ class _HeaderState extends State<Header> {
     String assetToLoad;
 
     if (localeName.startsWith('de') && isDarkMode) {
-      assetToLoad = 'assets/html/dark_mode_heading_de.html';
+      assetToLoad = 'assets/html/dark_mode_usage_de.html';
     } else if (isDarkMode) {
-      assetToLoad = 'assets/html/dark_mode_heading.html';
+      assetToLoad = 'assets/html/dark_mode_usage_de.html';
     } else if (localeName.startsWith('de')) {
-      assetToLoad = 'assets/html/heading_de.html';
+      assetToLoad = 'assets/html/usage_de.html';
     } else {
-      assetToLoad = 'assets/html/heading.html';
+      assetToLoad = 'assets/html/usage.html';
     }
-
     _controller.loadFlutterAsset(assetToLoad);
 
     return Scaffold(

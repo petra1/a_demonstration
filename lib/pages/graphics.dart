@@ -27,7 +27,7 @@ class Graphics extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+             const SizedBox(height: 20),
               Text(
                 AppLocalizations.of(context)!.altDescription,
                 style: TextStyle(
@@ -54,6 +54,7 @@ class Graphics extends StatelessWidget {
               ),
               AccesssibleIcon(),
               Semantics(
+                header: true,
                 headingLevel: 2,
                 child: Text(
                   AppLocalizations.of(context)!.decorativeGraphics,
