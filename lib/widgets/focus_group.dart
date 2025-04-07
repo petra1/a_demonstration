@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class FocusGroup extends StatefulWidget {
@@ -55,46 +56,53 @@ class _FocusGroupState extends State<FocusGroup> {
           ),
           FocusTraversalOrder(
             order: NumericFocusOrder(4.0),
-            child: ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: WidgetStateProperty.resolveWith(getColor),
-              ),
-              onPressed: () {
-                setState(() {
-                  _fullName =
-                      '${_fistnameController.text} ${_lastnameController.text}';
-                });
-              },
-              child: Text(
-                AppLocalizations.of(context)!.buttonDisplayFullName,
-                style: TextStyle(color: Colors.white, fontSize: 16),
+            child: Semantics(
+               sortKey: OrdinalSortKey(2.0),
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor: WidgetStateProperty.resolveWith(getColor),
+                ),
+                onPressed: () {
+                  setState(() {
+                    _fullName =
+                        '${_fistnameController.text} ${_lastnameController.text}';
+                  });
+                },
+                child: Text(
+                  AppLocalizations.of(context)!.buttonDisplayFullName,
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
               ),
             ),
           ),
           FocusTraversalOrder(
             order: NumericFocusOrder(3.0),
-            child: IconButton(
-              iconSize: 48,
-              onPressed: () {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    duration: Durations.extralong4,
-                    content: Text(
-                      AppLocalizations.of(context)!.toastButton4,
+            child: Semantics(
+              sortKey: OrdinalSortKey(1.0),
+              child: IconButton(
+                iconSize: 48,
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      duration: Durations.extralong4,
+                      content: Text(
+                        AppLocalizations.of(context)!.toastButton4,
+                      ),
                     ),
-                  ),
-                );
-              },
-              icon: Icon(
-                Icons.help,
-                semanticLabel:
-                    AppLocalizations.of(context)!.helpQuestion2Button,
+                  );
+                },
+                icon: Icon(
+                  Icons.help,
+                  semanticLabel:
+                      AppLocalizations.of(context)!.helpQuestion2Button,
+                ),
               ),
             ),
           ),
           FocusTraversalOrder(
             order: NumericFocusOrder(5.0),
             child: Semantics(
+              sortKey: OrdinalSortKey(1.0), 
               liveRegion: true,
               child: Text(
                 _fullName,

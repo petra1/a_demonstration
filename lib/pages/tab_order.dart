@@ -1,6 +1,5 @@
 import 'package:a_demonstration/widgets/focus_group.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class TabOrder extends StatefulWidget {
@@ -11,8 +10,6 @@ class TabOrder extends StatefulWidget {
 }
 
 class _TabOrderState extends State<TabOrder> {
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,8 +38,7 @@ class _TabOrderState extends State<TabOrder> {
                   ),
                 ),
                 const SizedBox(height: 20),
-               
-               FocusGroup()
+                FocusGroup()
               ],
             ),
           ),
@@ -51,5 +47,3 @@ class _TabOrderState extends State<TabOrder> {
     );
   }
 }
-
-
