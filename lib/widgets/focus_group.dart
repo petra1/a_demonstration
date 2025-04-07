@@ -115,7 +115,6 @@ class _FocusGroupState extends State<FocusGroup> {
     );
   }
 }
-
 Color? getColor(Set<WidgetState> states) {
   const Set<WidgetState> interactiveStates = <WidgetState>{
     WidgetState.focused,
