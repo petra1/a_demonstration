@@ -37,6 +37,7 @@ class _FocusGroupState extends State<FocusGroup> {
               ),
             ),
           ),
+          const SizedBox(height: 30.0),
           FocusTraversalOrder(
             order: NumericFocusOrder(2.0),
             child: TextField(
