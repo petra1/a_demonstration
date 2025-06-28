@@ -1,0 +1,221 @@
+{
+  "@@locale": "en",
+
+ 
+  "home": "Home",
+  "@home": {
+    "description": "Home"
+  },
+  "alternativeText": "Alternative Text",
+  "@home": {
+    "description": "Alternative Text"
+  },
+  "imageButtons": "Image Buttons",
+  "@imageButtons": {
+    "description": "Image Buttons"
+  },
+  "headings": "Headings",
+  "@imageButtons": {
+    "description": "Headingss"
+  },
+  "editFields": "Edit Fields",
+  "@editFields": {
+    "description": "Edit Fields"
+  },
+  "contrastRatio": "Contrast Ratio",
+  "@contrastRatio": {
+    "description": "Contrast Ratio"
+  },
+  "focusOrder": "Focus Order",
+  "@focusOrder": {
+    "description": "Focus Orde"
+  },
+  "focusVisible": "Focus Visible",
+  "@focusVisible": {
+    "description": "Focus Visible"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language"
+  },
+  "privacyContact": "Privacy & Contact",
+  "@privacyContact": {
+    "description": "Privacy & Contact"
+  },
+  "help": "Help",
+  "@help": {
+    "description": "Help"
+  },
+  "about": "About App",
+  "@about": {
+    "description": "About App"
+  },
+
+
+"altDescription": "The following will show what is read by screen readers in the three most common situations (no alternative text, decorative graphics, and informative graphics).",
+"@altDescription": {
+  "description": "Description for  alternative text"
+},
+"noAltText": "No Alternative Text",
+"@noAltText": {
+  "description": "No Alternative Text"
+},
+"noAltDescription": "In this example, the alternative text was intentionally omitted. In practice, it happens very often that the alternative text is omitted by mistake",
+"@noAltDescription": {
+  "description": "Description for no alternative text"
+},
+"decorativeGraphics": "Decorative Graphics",
+"@decorativeGraphics": {
+  "description": "Decorative Graphics"
+} ,
+"decorativeGraphicDescriptions": "In this example, the graphic was assumed to be purely decorative and the alternative text was left blank so that screen readers ignores the graphic and does not output unnecessary text.",
+"@decorativeGraphicDescription": {
+  "description": "Decorative Graphic Description"
+},
+"informativeGraphic": "Informative Graphic",
+"@informativeGraphi": {
+  "description": "Informative Graphic"
+},
+"informativeGraphicDescription": "In this example, the graphic was assumed to be informative, so it was provided with an alternative text.",
+"@informativeGraphi": {
+  "description": "Informative Graphic Description."
+},
+
+
+"description1ImageButton": "This example shows how screen readers behave with graphic buttons that lack alternative text, and at the same time shows how the buttons can be made more usable for people with limited fine motor skills.",
+"@description1ImageButton": {
+  "description": "Image Button Description 1"
+},
+"description2ImageButton": "In the first input field, the link to the visible label was intentionally omitted. The second is correctly linked to the label.",
+"@description2ImageButton": {
+  "description": "Image Button Description 2"
+},
+"question1ImageButton": "Question #1: What is the current version of WCAG?",
+"@question1ImageButton": {
+  "description": "Question #1"
+},
+"answer1ImageButton": "The current version of WCAG is 2.2.",
+"@answer1ImageButton": {
+  "description": "Answer #1"
+},
+"question2ImageButton": "Question #2: When was the current version of WCAG released?",
+"@question2ImageButton": {
+  "description": "Question #2"
+},
+"answer2ImageButton": "The current version was released in October 2023.",
+"@answer2ImageButton": {
+  "description": "Answer #2"
+},
+"helpQuestion2Button": "Help for question 2",
+"@helpQuestion2Button": {
+  "description": "Help for question 2"
+},
+
+"resetButton": "Reset questions",
+"@resetButton": {
+  "description": "reset button"
+},
+
+
+    
+
+"contrastRadioDescription": "The contrast ratio is often not given enough attention in the development of mobile apps. However, especially in mobile use, a good contrast ratio is important for all users, e.g. when using mobile devices outdoors in sunshine. Below you will find some examples of good and bad contrast ratios.",
+"@contrastRadioDescription": {
+  "description": "contrast radio description"
+},
+"contrastRadioPassed": "Passed with 21.0:1, HEX: #ffffff on #000000",
+"@contrastRadioPassed": {
+  "description": "contrast radio passed"
+},
+"contrastRadioFailed": "Failed with 2.3:1, HEX: #ffffff on #a0b0a1.",
+"@contrastRadioFailed": {
+  "description": "contrast radio passed"
+},
+"contrastRadioJustPassed": "Just passed with 4.5:1, HEX: #00e9ff on #5a4dad.",
+"@contrastRadioJustPassed": {
+  "description": "contrast radio just passed"
+},
+"contrastRadioJustFailed": "Just failed with 4.4:1, HEX: #ffffff on #0083a1.",
+"@contrastRadioJustFailed": {
+  "description": "contrast radio just failed"
+},
+"contrastRadioPassedWith": "Passed with contrast ratio of? HEX #ffffff on #006400.",
+"@contrastRadioPassedWith": {
+  "description": "contrast radio passed with"
+},
+"contrastRadioFaileddWith": "Failed with contrast ratio of?  HEX  on #bb86fc.",
+"@contrastRadioFaileddWith": {
+  "description": "contrast radio failed with"
+},
+
+"editFieldsDescription1": "In the following, we will show how screen readers behave when the visually visible labels have not been linked to the corresponding input field.",
+"@editFieldsDescription1": {
+  "description": "Description1 for edit fields"
+},
+"editFieldsDescription2": "No label was intentionally used in the first edit field. The second was labelled correctly.",
+"@editFieldsDescription2": {
+  "description": "Description 2 for edit fields"
+},
+"firstEditFieldHint": "First name",
+"@firstEditFieldHint": {
+  "description": "Hint for edit field first name"
+},
+"secondEditFieldLabel": "Last name",
+"@secondEditFieldLabel": {
+  "description": "Label for edit field Last name"
+},
+"buttonDisplayFullName": "Display full Name",
+"@buttonDisplayFullName": {
+  "description": "Button to display full name"
+},
+
+"tabOrderDescription1": "People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.",
+"@tabOrderDescription1": {
+  "description": "Tab order description1"
+},
+
+
+
+
+
+
+
+"focusVisibleDescription1": "People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.",
+"@focusVisibleDescription1": {
+  "description": "Description 1 for focus visible"
+},
+"focusVisibleDescription2": "In this example, the visibility of the keyboard focus was intentionally ignored for some button. Try using a Bluetooth keyboard paired with the mobile device and try to find and activate button 3 without counting how many times you press the Tab key.",
+"@focusVisibleDescription2": {
+  "description": "Description 2 for focus visible"
+},
+"toastButton1": "You have pressed button 1.",
+"@toastButton1": {
+  "description": "Toast for button 1"
+},
+"toastButton1": "You have pressed button 1.",
+"@toastButton1": {
+  "description": "Toast for button 1"
+},
+"toastButton2": "You have pressed button 2.",
+"@toastButton2": {
+  "description": "Toast for button 2"
+},
+"toastButton3": "You have pressed button 3.",
+"@toastButton3": {
+  "description": "Toast for button 3"
+},
+"toastButton4": "You have pressed button 4.",
+"@toastButton4": {
+  "description": "Toast for button 4"
+},
+"toastButton5": "You have pressed button 5.",
+"@toastButton5": {
+  "description": "Toast for button 5"
+},
+"toastButton6": "You have pressed button 6.",
+"@toastButton1": {
+  "description": "Toast for button 6"
+}
+
+
+}
