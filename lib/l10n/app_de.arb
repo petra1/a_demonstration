@@ -8,7 +8,6 @@
     "contrastRatio": "Kontrastverhältnis",
     "focusOrder": "Fokus-Reihenfolge",
     "focusVisible": "Focus Sichtbar",
-    "language": "Sprache",
     "privacyContact": "Datenschutz & Kontakt",
     "help": "Hilfe",
     "about": "Über die App",
@@ -39,26 +38,14 @@
     "contrastRadioPassedWith": "Bestanden mit einem Kontrastverhälnis von? HEX #ffffff auf #006400.",
     "contrastRadioFaileddWith": "Nicht bestanden mit einem Kontrastverhälnis von? HEX #ffffff auf #bb86fc.",
 
-
     "tabOrderDescription1": "Menschen mit eingeschränkter Feinmotorik sind möglicherweise nicht in der Lage, einen Touchscreen zu bedienen. Daher ist es wichtig, dass eine App auch mit einer über Bluetooth angeschlossenen Tastatur bedient werden kann und dass die Fokusreihenfolge der Bedienelemente korrekt ist.",
    
-
-
     "editFieldsDescription1": "Im Folgenden wird gezeigt, wie sich Screenreader verhalten, wenn die visuell sichtbaren Labels nicht mit dem entsprechenden Eingabefeld verknüpft sind.",
     "editFieldsDescription2": "Im ersten Eingabefeld wurde absichtlich kein label verwendet. Das zweite wurde korrekt mit einem Label versehen.",
     "firstEditFieldHint": "Vorname",
     "secondEditFieldLabel": "Nachname",
     "buttonDisplayFullName": "Vollständigen Namen anzeigen",
    
-
-
-    
-
-   
-
-
-
-
    "focusVisibleDescription1": "Motorischbehinderte Menschen haben möglicherweise Mühe oder sind nicht in der Lage einen Touch-Screen zu bedienen und verwenden daher eine Bluetooth-Tastatur. Dies setz unter anderem voraus, dass der Tastaturfokus genügend sichtbar ist. ",
    "focusVisibleDescription2": "In diesem Beispiel wurde die Sichtbarkeit des Tastaturfokus für einige Schalter absichtlich ignoriert. Verwenden Sie, einer mit dem mobilen Gerät gekoppelte Bluetooth-Tastatur und versuchen, die Taste 3 zu finden und zu aktivieren, ohne zu zählen, wie oft Sie die Tab-Taste drücken.",
    "toastButton1": "Sie haben Taste 1 gedrückt.",

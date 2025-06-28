@@ -146,12 +146,6 @@ abstract class AppLocalizations {
   /// **'Focus Visible'**
   String get focusVisible;
 
-  /// Language
-  ///
-  /// In en, this message translates to:
-  /// **'Language'**
-  String get language;
-
   /// Privacy & Contact
   ///
   /// In en, this message translates to:

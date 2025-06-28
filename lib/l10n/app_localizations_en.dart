@@ -33,9 +33,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get focusVisible => 'Focus Visible';
 
   @override
-  String get language => 'Language';
-
-  @override
   String get privacyContact => 'Privacy & Contact';
 
   @override

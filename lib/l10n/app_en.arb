@@ -34,10 +34,7 @@
   "@focusVisible": {
     "description": "Focus Visible"
   },
-  "language": "Language",
-  "@language": {
-    "description": "Language"
-  },
+ 
   "privacyContact": "Privacy & Contact",
   "@privacyContact": {
     "description": "Privacy & Contact"
@@ -173,11 +170,6 @@
 "@tabOrderDescription1": {
   "description": "Tab order description1"
 },
-
-
-
-
-
 
 
 "focusVisibleDescription1": "People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.",

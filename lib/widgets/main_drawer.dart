@@ -175,16 +175,7 @@ class MainDrawer extends StatelessWidget {
                 );
               },
             ),
-            ListTile(
-              leading: Icon(
-                Icons.language,
-                size: 24,
-              ),
-              title: Text(
-                AppLocalizations.of(context)!.language,
-              ),
-              onTap: () {},
-            ),
+            
             Divider(),
             ListTile(
               leading: Icon(
