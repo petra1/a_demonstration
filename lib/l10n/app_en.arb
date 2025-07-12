@@ -22,6 +22,10 @@
   "@editFields": {
     "description": "Edit Fields"
   },
+  "checkBoxes": "Checknoxes",
+  "@checkBoxes": {
+    "description": "Checknoxes"
+  },
   "contrastRatio": "Contrast Ratio",
   "@contrastRatio": {
     "description": "Contrast Ratio"

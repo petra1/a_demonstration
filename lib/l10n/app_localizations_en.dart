@@ -24,6 +24,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get editFields => 'Edit Fields';
 
   @override
+  String get checkBoxes => 'Checknoxes';
+
+  @override
   String get contrastRatio => 'Contrast Ratio';
 
   @override

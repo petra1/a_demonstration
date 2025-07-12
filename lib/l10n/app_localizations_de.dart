@@ -24,6 +24,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get editFields => 'Eingabefelder';
 
   @override
+  String get checkBoxes => 'Kontrollkästchen';
+
+  @override
   String get contrastRatio => 'Kontrastverhältnis';
 
   @override

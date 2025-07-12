@@ -1,3 +1,4 @@
+import 'package:a_demonstration/pages/check.dart';
 import 'package:a_demonstration/pages/contrast_ratio.dart';
 import 'package:a_demonstration/pages/graphics.dart';
 import 'package:a_demonstration/pages/header.dart';
@@ -120,6 +121,23 @@ class MainDrawer extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => EditFields(),
+                  ),
+                );
+              },
+            ),
+             ListTile(
+              leading: Icon(
+                Icons.check_box,
+                size: 24,
+              ),
+              title: Text(
+                AppLocalizations.of(context)!.checkBoxes,
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Check(),
                   ),
                 );
               },

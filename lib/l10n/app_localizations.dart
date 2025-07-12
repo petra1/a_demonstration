@@ -128,6 +128,12 @@ abstract class AppLocalizations {
   /// **'Edit Fields'**
   String get editFields;
 
+  /// Checknoxes
+  ///
+  /// In en, this message translates to:
+  /// **'Checknoxes'**
+  String get checkBoxes;
+
   /// Contrast Ratio
   ///
   /// In en, this message translates to:
