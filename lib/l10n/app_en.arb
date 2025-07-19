@@ -262,7 +262,44 @@
 "toastButton6": "You have pressed button 6.",
 "@toastButton1": {
   "description": "Toast for button 6"
+},
+"name": "Name:",
+"@name": {
+  "description": "Name"
+},
+"eMail": "Email:",
+"@eMail": {
+  "description": "Email"
+},
+"webSite": "Website:",
+"@webSite": {
+  "description": "Website"
+},
+
+"devName": "Petra Ritter",
+"@devName": {
+  "description": "Name of developer"
+},
+"dataProtection": "Privacy",
+"@dataprotection": {
+  "description": "Privac"
+},
+
+"dataProtectionDescription1": "The app only processes data locally and does not send it to other devices or third-party services. The data is also not stored permanently.",
+"@dataProtectionDescription1": {
+  "description": "Privacy description 1"
+},
+
+"dataProtectionDescription2": "The app contains two forms, but these are only sample forms. The data you enter in these forms is only processed locally and displayed on the user's device.",
+"@dataProtectionDescription2": {
+  "description": "Privacy description 2"
+},
+"contact": "Contact",
+"@contact": {
+  "description": "Contact"
 }
+
+
 
 
 }

@@ -212,4 +212,30 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get toastButton6 => 'Sie haben Taste 6 gedrückt.';
+
+  @override
+  String get name => 'Name:';
+
+  @override
+  String get eMail => 'Email:';
+
+  @override
+  String get webSite => 'Webseite:';
+
+  @override
+  String get devName => 'Petra Ritter';
+
+  @override
+  String get dataProtection => 'Datenschutz';
+
+  @override
+  String get dataProtectionDescription1 =>
+      'Die App verarbeitet die Daten nur lokal und sendet sie nicht an andere Geräte oder an Dienste Dritter. Die Daten werden auch nicht dauerhaft gespeichert.';
+
+  @override
+  String get dataProtectionDescription2 =>
+      'Die App enthält zwei Formulare, bei denen es sich jedoch nur um Beispiel-Formulare handelt. Die Daten, die Sie in diese Formulare eingeben, werden nur lokal verarbeitet  und auf dem Gerät des Benutzers angezeigt.';
+
+  @override
+  String get contact => 'Contact';
 }

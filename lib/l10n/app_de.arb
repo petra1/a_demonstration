@@ -68,6 +68,17 @@
    "toastButton3": "Sie haben Taste 3 gedrückt.",
    "toastButton4": "Sie haben Taste 4 gedrückt.",
    "toastButton5": "Sie haben Taste 5 gedrückt.",
-   "toastButton6": "Sie haben Taste 6 gedrückt."
+   "toastButton6": "Sie haben Taste 6 gedrückt.",
+
+   "name": "Name:",
+   "webSite": "Webseite:",
+   "eMail": "Email:",
+   "devName": "Petra Ritter",
+   "dataProtection": "Datenschutz",
+   "contact": "Contact",
+   "dataProtectionDescription1": "Die App verarbeitet die Daten nur lokal und sendet sie nicht an andere Geräte oder an Dienste Dritter. Die Daten werden auch nicht dauerhaft gespeichert.",
+   "dataProtectionDescription2": "Die App enthält zwei Formulare, bei denen es sich jedoch nur um Beispiel-Formulare handelt. Die Daten, die Sie in diese Formulare eingeben, werden nur lokal verarbeitet  und auf dem Gerät des Benutzers angezeigt.",
+   "devName": "Petra Ritter"
+  
 }
 

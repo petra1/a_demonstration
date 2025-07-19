@@ -451,6 +451,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You have pressed button 6.'**
   String get toastButton6;
+
+  /// Name
+  ///
+  /// In en, this message translates to:
+  /// **'Name:'**
+  String get name;
+
+  /// Email
+  ///
+  /// In en, this message translates to:
+  /// **'Email:'**
+  String get eMail;
+
+  /// Website
+  ///
+  /// In en, this message translates to:
+  /// **'Website:'**
+  String get webSite;
+
+  /// Name of developer
+  ///
+  /// In en, this message translates to:
+  /// **'Petra Ritter'**
+  String get devName;
+
+  /// No description provided for @dataProtection.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy'**
+  String get dataProtection;
+
+  /// Privacy description 1
+  ///
+  /// In en, this message translates to:
+  /// **'The app only processes data locally and does not send it to other devices or third-party services. The data is also not stored permanently.'**
+  String get dataProtectionDescription1;
+
+  /// Privacy description 2
+  ///
+  /// In en, this message translates to:
+  /// **'The app contains two forms, but these are only sample forms. The data you enter in these forms is only processed locally and displayed on the user\'s device.'**
+  String get dataProtectionDescription2;
+
+  /// Contact
+  ///
+  /// In en, this message translates to:
+  /// **'Contact'**
+  String get contact;
 }
 
 class _AppLocalizationsDelegate

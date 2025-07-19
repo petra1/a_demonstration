@@ -1,4 +1,5 @@
 import 'package:a_demonstration/pages/check_b.dart';
+import 'package:a_demonstration/pages/contact.dart';
 import 'package:a_demonstration/pages/contrast_ratio.dart';
 import 'package:a_demonstration/pages/graphics.dart';
 import 'package:a_demonstration/pages/header.dart';
@@ -203,7 +204,14 @@ class MainDrawer extends StatelessWidget {
               title: Text(
                 AppLocalizations.of(context)!.privacyContact,
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Contact(),
+                  ),
+                );
+              },
             ),
             ListTile(
               leading: Icon(

@@ -212,4 +212,30 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get toastButton6 => 'You have pressed button 6.';
+
+  @override
+  String get name => 'Name:';
+
+  @override
+  String get eMail => 'Email:';
+
+  @override
+  String get webSite => 'Website:';
+
+  @override
+  String get devName => 'Petra Ritter';
+
+  @override
+  String get dataProtection => 'Privacy';
+
+  @override
+  String get dataProtectionDescription1 =>
+      'The app only processes data locally and does not send it to other devices or third-party services. The data is also not stored permanently.';
+
+  @override
+  String get dataProtectionDescription2 =>
+      'The app contains two forms, but these are only sample forms. The data you enter in these forms is only processed locally and displayed on the user\'s device.';
+
+  @override
+  String get contact => 'Contact';
 }

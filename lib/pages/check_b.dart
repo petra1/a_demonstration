@@ -48,13 +48,17 @@ class _CheckBState extends State<CheckB> {
                 ),
               ),
               SizedBox(height: 60.0),
-              Text(
-                AppLocalizations.of(context)!.checkboxesQuestion1,
-                style: TextStyle(
-                  fontSize: 16,
+              Container(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  AppLocalizations.of(context)!.checkboxesQuestion1,
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
                 ),
               ),
               Container(
+                alignment: Alignment.centerLeft,
                 padding: EdgeInsets.symmetric(horizontal: 120),
                 child: CheckboxListTile(
                   title: Text(
@@ -117,10 +121,13 @@ class _CheckBState extends State<CheckB> {
                   checkColor: Colors.white,
                 ),
               ),
-              Text(
-                AppLocalizations.of(context)!.checkboxesQuestion2,
-                style: TextStyle(
-                  fontSize: 16,
+              Container(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  AppLocalizations.of(context)!.checkboxesQuestion2,
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
                 ),
               ),
               Container(
