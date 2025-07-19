@@ -148,6 +148,46 @@ class AppLocalizationsEn extends AppLocalizations {
       'People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.';
 
   @override
+  String get checkBoxesDescription1 =>
+      'This example shows how TalkBack behaves if checkboxes have not been implemented correctly.';
+
+  @override
+  String get checkBoxesDescription2 =>
+      'The first checkboxes were implemented without taking accessibility into account. This was taken into account for the second.';
+
+  @override
+  String get checkboxesQuestion1 => 'Question 1: Do you know how to programme?';
+
+  @override
+  String get checkboxQuestionYes => 'Yes';
+
+  @override
+  String get checkboxQuestionNo => 'No';
+
+  @override
+  String get checkboxesQuestion2 =>
+      'Question 2: Do you plan to learn programming?';
+
+  @override
+  String get checkboxesQuestionDescription2 =>
+      'Do you plan to learn programming?';
+
+  @override
+  String get messageCheckboxQuestion1Yes => 'Very good. Keep on learning!';
+
+  @override
+  String get messageCheckboxQuestion1No =>
+      'Also good. There are also other things you can do';
+
+  @override
+  String get messageCheckboxQuestion2Yes =>
+      'Good, programming is an exciting hobby.';
+
+  @override
+  String get messageCheckboxQuestion2No =>
+      'Perhaps you will be interested in programming later on.';
+
+  @override
   String get focusVisibleDescription1 =>
       'People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.';
 

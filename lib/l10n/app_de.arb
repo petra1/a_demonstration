@@ -46,7 +46,21 @@
     "firstEditFieldHint": "Vorname",
     "secondEditFieldLabel": "Nachname",
     "buttonDisplayFullName": "Vollständigen Namen anzeigen",
-   
+
+   "checkBoxesDescription1": "Dieses Beispiel zeigt, wie sich TalkBack bei Kontrollkästchen verhält, die nicht richtig implementiert wurden.",
+   "checkBoxesDescription2": "Die ersten Kontrollkästchen wurden ohne Berücksichtigung der Accessibility implementiert. Bei den zweiten wurde darauf geachtet.",
+   "checkboxesQuestion1": "Frage 1: Können Sie programmieren?",
+   "checkboxQuestionYes": "Ja",
+   "checkboxQuestionNo": "Nein",
+   "checkboxesQuestion2": "Frage 2: Haben Sie vor programmieren zu lernen?",
+   "checkboxesQuestionDescription2": "Haben Sie vor programmieren zu lernen?",
+   "messageCheckboxQuestion1Yes": "Sehr gut. Fleissig weiter lernen!",
+   "messageCheckboxQuestion1No": "Auch gut. Es gibt auch noch andere Dinge, die man tuen kann.",
+   "messageCheckboxQuestion2Yes": "Gut, Programmieren ist ein spannendes Hobby.",
+   "messageCheckboxQuestion2No": "Vielleicht interessieren Sie sich später einmal für das Programmieren.",
+  
+
+
    "focusVisibleDescription1": "Motorischbehinderte Menschen haben möglicherweise Mühe oder sind nicht in der Lage einen Touch-Screen zu bedienen und verwenden daher eine Bluetooth-Tastatur. Dies setz unter anderem voraus, dass der Tastaturfokus genügend sichtbar ist. ",
    "focusVisibleDescription2": "In diesem Beispiel wurde die Sichtbarkeit des Tastaturfokus für einige Schalter absichtlich ignoriert. Verwenden Sie, einer mit dem mobilen Gerät gekoppelte Bluetooth-Tastatur und versuchen, die Taste 3 zu finden und zu aktivieren, ohne zu zählen, wie oft Sie die Tab-Taste drücken.",
    "toastButton1": "Sie haben Taste 1 gedrückt.",

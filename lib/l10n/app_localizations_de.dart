@@ -148,6 +148,46 @@ class AppLocalizationsDe extends AppLocalizations {
       'Menschen mit eingeschränkter Feinmotorik sind möglicherweise nicht in der Lage, einen Touchscreen zu bedienen. Daher ist es wichtig, dass eine App auch mit einer über Bluetooth angeschlossenen Tastatur bedient werden kann und dass die Fokusreihenfolge der Bedienelemente korrekt ist.';
 
   @override
+  String get checkBoxesDescription1 =>
+      'Dieses Beispiel zeigt, wie sich TalkBack bei Kontrollkästchen verhält, die nicht richtig implementiert wurden.';
+
+  @override
+  String get checkBoxesDescription2 =>
+      'Die ersten Kontrollkästchen wurden ohne Berücksichtigung der Accessibility implementiert. Bei den zweiten wurde darauf geachtet.';
+
+  @override
+  String get checkboxesQuestion1 => 'Frage 1: Können Sie programmieren?';
+
+  @override
+  String get checkboxQuestionYes => 'Ja';
+
+  @override
+  String get checkboxQuestionNo => 'Nein';
+
+  @override
+  String get checkboxesQuestion2 =>
+      'Frage 2: Haben Sie vor programmieren zu lernen?';
+
+  @override
+  String get checkboxesQuestionDescription2 =>
+      'Haben Sie vor programmieren zu lernen?';
+
+  @override
+  String get messageCheckboxQuestion1Yes => 'Sehr gut. Fleissig weiter lernen!';
+
+  @override
+  String get messageCheckboxQuestion1No =>
+      'Auch gut. Es gibt auch noch andere Dinge, die man tuen kann.';
+
+  @override
+  String get messageCheckboxQuestion2Yes =>
+      'Gut, Programmieren ist ein spannendes Hobby.';
+
+  @override
+  String get messageCheckboxQuestion2No =>
+      'Vielleicht interessieren Sie sich später einmal für das Programmieren.';
+
+  @override
   String get focusVisibleDescription1 =>
       'Motorischbehinderte Menschen haben möglicherweise Mühe oder sind nicht in der Lage einen Touch-Screen zu bedienen und verwenden daher eine Bluetooth-Tastatur. Dies setz unter anderem voraus, dass der Tastaturfokus genügend sichtbar ist. ';
 

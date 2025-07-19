@@ -176,6 +176,57 @@
 },
 
 
+"checkBoxesDescription1": "This example shows how TalkBack behaves if checkboxes have not been implemented correctly.",
+"@tabOrderDescription1": {
+  "description": "Checknoxes description1"
+},
+
+"checkBoxesDescription2": "The first checkboxes were implemented without taking accessibility into account. This was taken into account for the second.",
+"@checkBoxesDescription2": {
+  "description": "Checknoxes description2"
+},
+
+"checkboxesQuestion1": "Question 1: Do you know how to programme?",
+"@checkboxesQuestion1": {
+  "description": "Checkboxes question 1"
+},    
+"checkboxQuestionYes": "Yes",
+"@checkboxQuestionYes": {
+  "description": "Checkbox Question Yes"
+},  
+
+"checkboxQuestionNo": "No",
+"@checkboxQuestionNo": {
+  "description": "Checkbox Question No"
+},
+
+"checkboxesQuestion2": "Question 2: Do you plan to learn programming?",
+"@checkboxesQuestion2": {
+  "description": "Checkboxes question 2"
+},
+"checkboxesQuestionDescription2": "Do you plan to learn programming?",
+"@checkboxesQuestionDescription2": {
+  "description": "Description checkboxes question 2"
+},
+"messageCheckboxQuestion1Yes": "Very good. Keep on learning!",
+"@messageCheckboxQuestion1Yes": {
+  "description": "Message checkbox question 1 for yes"
+},
+"messageCheckboxQuestion1No": "Also good. There are also other things you can do",
+"@messageCheckboxQuestion1No": {
+  "description": "Message checkbox question 1 for no"
+},
+
+"messageCheckboxQuestion2Yes": "Good, programming is an exciting hobby.",
+"@messageCheckboxQuestion2Yes": {
+  "description": "Message checkbox question 2 for yes"
+},
+"messageCheckboxQuestion2No": "Perhaps you will be interested in programming later on.",
+"@messageCheckboxQuestion2No": {
+  "description": "Message checkbox question 2 for no"
+},
+
+
 "focusVisibleDescription1": "People with motor disabilities may have difficulty or be unable to operate a touch screen and therefore use a Bluetooth keyboard. This requires, among other things, that the keyboard focus is sufficiently visible.",
 "@focusVisibleDescription1": {
   "description": "Description 1 for focus visible"

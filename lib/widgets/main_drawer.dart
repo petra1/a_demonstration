@@ -1,4 +1,4 @@
-import 'package:a_demonstration/pages/check.dart';
+import 'package:a_demonstration/pages/check_b.dart';
 import 'package:a_demonstration/pages/contrast_ratio.dart';
 import 'package:a_demonstration/pages/graphics.dart';
 import 'package:a_demonstration/pages/header.dart';
@@ -137,7 +137,7 @@ class MainDrawer extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Check(),
+                    builder: (context) => CheckB(),
                   ),
                 );
               },

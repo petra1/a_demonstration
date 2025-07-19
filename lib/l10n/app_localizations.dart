@@ -332,11 +332,77 @@ abstract class AppLocalizations {
   /// **'Display full Name'**
   String get buttonDisplayFullName;
 
-  /// Tab order description1
+  /// Checknoxes description1
   ///
   /// In en, this message translates to:
   /// **'People with limited fine motor skills may not be able to operate a touch screen. It is therefore important that an app can also be operated with a keyboard connected via Bluetooth and that the focus order of the operating elements is correct.'**
   String get tabOrderDescription1;
+
+  /// No description provided for @checkBoxesDescription1.
+  ///
+  /// In en, this message translates to:
+  /// **'This example shows how TalkBack behaves if checkboxes have not been implemented correctly.'**
+  String get checkBoxesDescription1;
+
+  /// Checknoxes description2
+  ///
+  /// In en, this message translates to:
+  /// **'The first checkboxes were implemented without taking accessibility into account. This was taken into account for the second.'**
+  String get checkBoxesDescription2;
+
+  /// Checkboxes question 1
+  ///
+  /// In en, this message translates to:
+  /// **'Question 1: Do you know how to programme?'**
+  String get checkboxesQuestion1;
+
+  /// Checkbox Question Yes
+  ///
+  /// In en, this message translates to:
+  /// **'Yes'**
+  String get checkboxQuestionYes;
+
+  /// Checkbox Question No
+  ///
+  /// In en, this message translates to:
+  /// **'No'**
+  String get checkboxQuestionNo;
+
+  /// Checkboxes question 2
+  ///
+  /// In en, this message translates to:
+  /// **'Question 2: Do you plan to learn programming?'**
+  String get checkboxesQuestion2;
+
+  /// Description checkboxes question 2
+  ///
+  /// In en, this message translates to:
+  /// **'Do you plan to learn programming?'**
+  String get checkboxesQuestionDescription2;
+
+  /// Message checkbox question 1 for yes
+  ///
+  /// In en, this message translates to:
+  /// **'Very good. Keep on learning!'**
+  String get messageCheckboxQuestion1Yes;
+
+  /// Message checkbox question 1 for no
+  ///
+  /// In en, this message translates to:
+  /// **'Also good. There are also other things you can do'**
+  String get messageCheckboxQuestion1No;
+
+  /// Message checkbox question 2 for yes
+  ///
+  /// In en, this message translates to:
+  /// **'Good, programming is an exciting hobby.'**
+  String get messageCheckboxQuestion2Yes;
+
+  /// Message checkbox question 2 for no
+  ///
+  /// In en, this message translates to:
+  /// **'Perhaps you will be interested in programming later on.'**
+  String get messageCheckboxQuestion2No;
 
   /// Description 1 for focus visible
   ///
