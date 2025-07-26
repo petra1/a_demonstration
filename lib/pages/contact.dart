@@ -1,9 +1,38 @@
 import 'package:a_demonstration/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class Contact extends StatelessWidget {
+class Contact extends StatefulWidget {
   const Contact({super.key});
 
+  @override
+  State<Contact> createState() => _ContactState();
+  
+
+ 
+ 
+}
+
+class _ContactState extends State<Contact> {
+  final Uri myWebSiteUrl = Uri.parse('https://sites.google.com/view/ritter-apps/project');
+  final Uri myEmail = Uri.parse('mailto:ritter1.apps@gmail.com');
+
+  Future<void> launchWebSiteUrl() async {
+    try{
+      await launchUrl(myWebSiteUrl);
+    } catch (err) {
+      // error handeling
+    }
+  }
+ Future<void> launchMauk() async {
+    try{
+      await launchUrl(myEmail);
+    } catch (err) {
+      // error handeling
+    }
+  }
+ 
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,11 +104,20 @@ class Contact extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "ritter1.apps@gmail.com",
-                      style: TextStyle(
-                        fontSize: 16,
+                    child: InkWell( 
+                      onTap: () {
+                   launchUrl(myEmail);
+                      },
+                      child: Text(
+                        "ritter1.apps@gmail.com",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.blue,
+                          decoration: TextDecoration.underline,
+
+                        ),
                       ),
+                    
                     ),
                   ),
                 ],
@@ -94,10 +132,17 @@ class Contact extends StatelessWidget {
               ),
               Container(
                 alignment: Alignment.centerLeft,
-                child: Text(
-                  "https://sites.google.com/view/ritter-apps/project",
-                  style: TextStyle(
-                    fontSize: 16,
+                child: InkWell(
+                  onTap: () {
+                  launchUrl(myWebSiteUrl);
+                  },
+                  child: Text(
+                    "https://sites.google.com/view/ritter-apps/project",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.blue,
+                      decoration: TextDecoration.underline,
+                    ),
                   ),
                 ),
               ),
@@ -107,4 +152,4 @@ class Contact extends StatelessWidget {
       ),
     );
   }
-}
+  }
