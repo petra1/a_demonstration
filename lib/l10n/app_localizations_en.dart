@@ -238,4 +238,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get contact => 'Contact';
+
+  @override
+  String get appName => 'App name';
+
+  @override
+  String get appVersion => 'App version';
+
+  @override
+  String get buildNumber => 'Build number';
+
+  @override
+  String get gitHub => 'GitHub';
 }

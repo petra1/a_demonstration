@@ -238,4 +238,16 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get contact => 'Contact';
+
+  @override
+  String get appName => 'App Name';
+
+  @override
+  String get appVersion => 'App Version';
+
+  @override
+  String get buildNumber => 'Build Nummer';
+
+  @override
+  String get gitHub => 'GitHub';
 }

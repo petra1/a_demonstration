@@ -78,7 +78,12 @@
    "contact": "Contact",
    "dataProtectionDescription1": "Die App verarbeitet die Daten nur lokal und sendet sie nicht an andere Geräte oder an Dienste Dritter. Die Daten werden auch nicht dauerhaft gespeichert.",
    "dataProtectionDescription2": "Die App enthält zwei Formulare, bei denen es sich jedoch nur um Beispiel-Formulare handelt. Die Daten, die Sie in diese Formulare eingeben, werden nur lokal verarbeitet  und auf dem Gerät des Benutzers angezeigt.",
-   "devName": "Petra Ritter"
+   "devName": "Petra Ritter",
+
+   "appName": "App Name",
+   "appVersion": "App Version",
+   "buildNumber": "Build Nummer",
+   "gitHub": "GitHub"
   
 }
 

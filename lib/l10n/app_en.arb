@@ -297,6 +297,24 @@
 "contact": "Contact",
 "@contact": {
   "description": "Contact"
+},
+
+
+"appName": "App name",
+"@appName": {
+  "description": "App name"
+},
+"appVersion": "App version",
+"@appVersion": {
+  "description": "App version"
+},
+"buildNumber": "Build number",
+"@buildNumber": {
+  "description": "Build number<"
+},
+"gitHub": "GitHub",
+"@gitHubt": {
+  "description": "GitHub"
 }
 
 

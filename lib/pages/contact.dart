@@ -112,7 +112,7 @@ class _ContactState extends State<Contact> {
                         "ritter1.apps@gmail.com",
                         style: TextStyle(
                           fontSize: 16,
-                          color: Colors.blue,
+                          color: Colors.green,
                           decoration: TextDecoration.underline,
 
                         ),
@@ -140,7 +140,7 @@ class _ContactState extends State<Contact> {
                     "https://sites.google.com/view/ritter-apps/project",
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.blue,
+                      color: Colors.green,
                       decoration: TextDecoration.underline,
                     ),
                   ),
