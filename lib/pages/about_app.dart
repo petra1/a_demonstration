@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:a_demonstration/l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 class AboutApp extends StatefulWidget {
   const AboutApp({super.key});
@@ -12,6 +13,26 @@ class AboutApp extends StatefulWidget {
 class _AboutAppState extends State<AboutApp> {
   final Uri myGitHubUrl =
       Uri.parse('https://github.com/petra1/a_demonstration');
+
+  String appName = '';
+  String appVersion = '';
+  String buildNumber = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _initPackageInfo();
+  }
+
+  Future<void> _initPackageInfo() async {
+    final info = await PackageInfo.fromPlatform();
+    setState(() {
+      appName = info.appName;
+      appVersion = info.version;
+      buildNumber = info.buildNumber;
+    });
+  }
+
   Future<void> launchGitGubUrl() async {
     try {
       await launchUrl(myGitHubUrl);
@@ -50,10 +71,9 @@ class _AboutAppState extends State<AboutApp> {
               Container(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "A Demonstration",
+                  appName,
                   style: TextStyle(
                     fontSize: 16,
-                   
                   ),
                 ),
               ),
@@ -66,14 +86,12 @@ class _AboutAppState extends State<AboutApp> {
                 ),
               ),
               SizedBox(height: 3),
-
               Container(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "0.99",
+                  appVersion,
                   style: TextStyle(
                     fontSize: 16,
-                    
                   ),
                 ),
               ),
@@ -85,14 +103,13 @@ class _AboutAppState extends State<AboutApp> {
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
-              SizedBox(height:3),
+              SizedBox(height: 3),
               Container(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "8  ",
+                  buildNumber,
                   style: TextStyle(
                     fontSize: 16,
-                  
                   ),
                 ),
               ),
@@ -109,7 +126,7 @@ class _AboutAppState extends State<AboutApp> {
                 alignment: Alignment.centerLeft,
                 child: InkWell(
                   onTap: () {
-                    launchUrl(myGitHubUrl );
+                    launchUrl(myGitHubUrl);
                   },
                   child: Text(
                     "https://github.com/petra1/a_demonstration",
